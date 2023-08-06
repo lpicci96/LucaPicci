@@ -1,0 +1,29 @@
+/* main breakpoints */
+
+/* general breakpoints to use are 
+
+mobile                      - 320px - 480px
+tablet                      - 481px - 768px
+laptop and small screen     - 769px - 1024px
+large screen and desktop    - 1025px - 1200px
+extra large screen          - 1201px - 1280px
+extra extra large screen    - 1281px
+*/
+
+/* mobile above 320 */
+/* @media (min-width: 320px){} */
+
+/* tablet above 481*/
+/* @media (min-width: 481px) {} */
+
+/* laptop and small screen above 769 */
+/* @media (min-width: 769px) {} */
+
+/* large screen and desktop above 1025 */
+/* @media (min-width: 1025px) {} */
+
+/* extra large screen above 1201 */
+/* @media (min-width: 1201px) {} */
+
+/* Extra Extra large */
+/* @media (min-width: 1281px) {} */

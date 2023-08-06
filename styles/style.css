@@ -1,0 +1,239 @@
+
+:root {
+    /* font sizes */
+    --font-size-xxs: 0.5rem;
+    --font-size-xs: 0.75rem;
+    --font-size-s: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-x1: 1.125rem;
+    --font-size-x2: 1.25rem;
+    --font-size-x3: 1.375rem;
+    --font-size-x4: 1.5rem;
+    --font-size-x5: 1.875rem;
+    --font-size-x6: 2.25rem;
+    --font-size-x7: 3rem;
+    --font-size-x8: 4rem;
+    --font-size-x9: 5rem;
+    --font-size-x10: 6rem;
+    --font-size-x11: 8rem;
+    --font-size-x12: 10rem;
+
+    /* colors */
+    --color-background-grey: #f3f4f6;
+    --color-font-grey: #1c1917; /*stone 900*/
+    --color-font-grey-light: #a8a29e; /*stone 400*/
+
+    /* indigo color theme */
+    --color-font-indigo-xxlight: #eae9fc;
+    --color-font-indigo-xlight: #bfbcf5;
+    --color-font-indigo-light: #7f79ec;
+    --color-font-indigo-base: #3f36e2;
+    --color-font-indigo-dark: #151070;
+}
+
+* {
+    margin: 0;
+    line-height: calc(1em +0.5rem);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Ranade', sans-serif; 
+    font-size: var(--font-size-base);
+    color: var(--color-font-grey);
+}
+
+a {
+    /* color: var(--color-font-indigo-base); */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-font-indigo-light);
+}
+
+hr {
+    border-color: var(--color-font-indigo-xlight);
+    border-width: 1px;
+}
+
+mark {
+    background-color: var(--color-font-indigo-xxlight);
+    font-weight: bold;
+    padding: 0 0.25rem;
+}
+
+img, picture, video, svg, canvas {
+    max-width: 100%;
+    display: block;
+    user-select: none;
+}
+
+
+button {
+    display: inline-block;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+/* button class */
+.btn {
+    display: inline-block;
+    background-color: var(--color-font-indigo-light);
+    color: var(--color-background-grey);
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: var(--color-font-indigo-base);
+    color: var(--color-background-grey);
+    transform: translateY(-2px);
+    /* box-shadow: none; */
+}
+
+
+/* container for the differen sections */
+.container {
+    width: 100%;
+    border: 1px solid red;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 0.5rem;
+}
+
+
+/* basic media queries */
+
+/* mobile above 320 */
+@media (min-width: 320px){
+
+    body {
+        font-size: var(--font-size-s)
+    }
+
+    h3 {
+        font-size: var(--font-size-x2)}
+
+    h2 {
+        font-size: var(--font-size-x3)}
+
+    h1 {
+        font-size: var(--font-size-x4)}
+
+    .container {
+        max-width: 320px;
+    }
+
+}
+
+/* tablet above 481*/
+@media (min-width: 481px) {
+
+    body {
+        font-size: var(--font-size-base)}
+
+
+    h3 {
+        font-size: var(--font-size-x3)}
+
+    h2 {
+        font-size: var(--font-size-x4)}
+
+    h1 {
+        font-size: var(--font-size-x5)}
+
+
+    .container {
+        max-width: 481px;
+    }
+
+}
+
+/* laptop and small screen above 769 */
+@media (min-width: 769px) {
+
+    body {
+        font-size: var(--font-size-x1)
+    }
+
+    h3 {
+        font-size: var(--font-size-x4)}
+    
+    h2 {
+        font-size: var(--font-size-x5)}
+
+    h1 {
+        font-size: var(--font-size-x6)}
+
+
+    .container {
+        max-width: 769px;
+    }
+
+}
+
+/* large screen and desktop above 1025 */
+@media (min-width: 1025px) {
+    body {
+        font-size: var(--font-size-x2)
+    }
+
+    h3 {
+        font-size: var(--font-size-x5)}
+
+    h2 {
+        font-size: var(--font-size-x6)}
+
+    h1 {
+        font-size: var(--font-size-x7)}
+
+    .container {
+        max-width: 1025px;
+    }
+
+}
+
+/* extra large screen above 1201 */
+@media (min-width: 1201px) {
+    body {
+        font-size: var(--font-size-x3)
+    }
+
+    h3 {
+        font-size: var(--font-size-x6)}
+
+    h2 {
+        font-size: var(--font-size-x7)}
+
+    h1 {
+        font-size: var(--font-size-x8)}
+
+    .container {
+        max-width: 1201px;
+    }
+
+}
+
+/* Extra Extra large */
+@media (min-width: 1281px) {
+
+    body {
+        font-size: var(--font-size-x4)
+    }
+    .container {
+        max-width: 1281px;
+    }
+
+}
