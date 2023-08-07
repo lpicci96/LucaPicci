@@ -1,0 +1,48 @@
+.mobile-nav {
+    display: none;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-stone50);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 999;
+    
+}
+
+
+.mobile-nav__menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.mobile-nav__menu-link {
+    color: var(--color-font-grey);
+}
+
+
+
+
+
+/* mobile above 320 */
+/* @media (min-width: 320px){} */
+
+/* tablet above 481*/
+/* @media (min-width: 481px) {} */
+
+/* laptop and small screen above 769 */
+/* @media (min-width: 769px) {} */
+
+/* large screen and desktop above 1025 */
+/* @media (min-width: 1025px) {} */
+
+/* extra large screen above 1201 */
+/* @media (min-width: 1201px) {} */
+
+/* Extra Extra large */
+/* @media (min-width: 1281px) {} */
