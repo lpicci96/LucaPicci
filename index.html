@@ -8,6 +8,8 @@
 
     <!-- Font family -->
     <link href="https://api.fontshare.com/v2/css?f[]=ranade@700,300,400,500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
 
@@ -19,7 +21,7 @@
       <div class="header__menu">
         <nav>
           <ul class="header__menu-list">
-            <li><a class="header__menu-link" href="#">What I do</a></li>
+            <li><a class="header__menu-link" href="#what_i_do">What I do</a></li>
             <li><a class="header__menu-link" href="#">My work</a></li>
             <li><a class="header__menu-link" href="#">About me</a></li>
           </ul>
@@ -39,7 +41,7 @@
     <div class="mobile-nav">
       <nav>
         <ul class="mobile-nav__menu">
-          <li><a class="mobile-nav__menu-link" href="#">What I do</a></li>
+          <li><a class="mobile-nav__menu-link" href="#what_i_do">What I do</a></li>
           <li><a class="mobile-nav__menu-link" href="#">My work</a></li>
           <li><a class="mobile-nav__menu-link" href="#">About me</a></li>
         </ul>
@@ -48,33 +50,46 @@
 
     </div>
 
-
-
-
     <main>
-      <section class="container">
-        <h1>This is a MAIN TITLE</h1>
-        <h2>This is a title</h2>
-        <h3>This is a subtitle</h3>
-      </section>
-      <section class="container">
-        <p>Occaecat <mark>laboris</mark> id ad velit. <strong>Adipisicing aliquip laborum </strong>veniam in esse pariatur et. Voluptate tempor nostrud proident et ea voluptate proident Lorem. Officia deserunt culpa laboris commodo. Esse pariatur Lorem sit et nulla eiusmod veniam tempor eu esse id tempor qui. Cupidatat incididunt qui excepteur occaecat consequat id.</p>
-      </section>
-      <section class="container">
-        <h2>Some title</h2>
-        <p>Labore non aute reprehenderit non dolore aliquip cillum. Anim enim cillum anim elit velit eiusmod consequat commodo in excepteur do. Consequat cillum aliqua in aliqua.</p>
-        <button class="btn">Click</button>
-        <p>Magna ut est consectetur anim commodo irure ullamco ullamco commodo esse veniam officia.</p>
-        <hr>
-        <a href="#">Link</a>
-      </section>
-      <section class="container">
-        <h2>Some title</h2>
+
+      <!-- Hero -->
+      <section class="hero container">
+        <div class="hero__section">
+          <img class="hero__headshot" src="/headshot.jpg" alt="headshot portfolio picture of Luca">
+          <div>
+            <p  class="hero__content">Hi, I'm <strong>Luca</strong>.</p>
+            <p  class="hero__content">I'm a senior data analyst at <a>the ONE Campaign</a>.</p>
+            <p  class="hero__content">I build data visualizations, tools, and analyses to understand and tackle the most challenging issues in international development.</p>
+            
+            <div class="hero__social">
+              <a class="fa fa-github hero__social-icon" href="https://github.com/lpicci96" target="_blank"></a>
+              <a class="fa fa-twitter hero__social-icon" href="https://twitter.com/lpicci96" target="_blank"></a>
+              <a class="fa fa-linkedin hero__social-icon" href="https://www.linkedin.com/in/luca-picci-589735b3/" target="_blank"></a>
+              <a class="fa fa-envelope hero__social-icon" href="mailto:lpicci96@gmail.com" target="_blank"></a>
+            </div>
+          </div>
+        </div>
+                
+
+        <br><br>
+        <h3 id="what_i_do">What I do</h3>
         <ul>
-          <li>Item 1</li>
-          <li>Item 2</li>
-          <li>Item 3</li>
+          <li>Data Analysis</li>
+          <li>Python Development</li>
+          <li>Data Visualization</li>
+          <li>Web Scraping</li>
+          <li>Economic and Public Policy Research</li>
+          <li>Data engineering</li>
         </ul>
+        <h3>Technologies I use</h3>
+        <ul>
+          <li>Python</li>
+          <li>SQL</li>
+          <li>JavaScript</li>
+          <li>HTML</li>
+          <li>CSS</li>
+        </ul>
+
       </section>
       
       

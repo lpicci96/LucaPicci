@@ -55,10 +55,12 @@ a {
     /* color: var(--color-font-indigo-base); */
     font-weight: bold;
     text-decoration: none;
+    cursor: pointer;
+    transition: 0.2s;
 }
 
 a:hover {
-    color: var(--color-font-indigo-light);
+    color: var(--color-font-indigo-base);
 }
 
 hr {
@@ -67,7 +69,8 @@ hr {
 }
 
 mark {
-    background-color: var(--color-font-indigo-xxlight);
+    background-color: var(--color-font-indigo-base);
+    color: var(--color-stone50);
     font-weight: bold;
     padding: 0 0.25rem;
 }
@@ -139,7 +142,8 @@ button {
         font-size: var(--font-size-x4)}
 
     .container {
-        max-width: 320px;
+        /* max-width: 320px; */
+        max-width: 95%;
     }
 
 }
@@ -161,9 +165,9 @@ button {
         font-size: var(--font-size-x5)}
 
 
-    .container {
+    /* .container {
         max-width: 481px;
-    }
+    } */
 
 }
 
@@ -185,7 +189,8 @@ button {
 
 
     .container {
-        max-width: 769px;
+        /* max-width: 769px; */
+        max-width: 80%;
     }
 
 }
@@ -206,7 +211,9 @@ button {
         font-size: var(--font-size-x7)}
 
     .container {
-        max-width: 1025px;
+        /* max-width: 1025px; */
+        max-width: 75%;
+        
     }
 
 }
@@ -227,7 +234,8 @@ button {
         font-size: var(--font-size-x8)}
 
     .container {
-        max-width: 1201px;
+        /* max-width: 1201px; */
+        max-width: 70%;
     }
 
 }
