@@ -52,7 +52,7 @@ body {
 }
 
 a {
-    /* color: var(--color-font-indigo-base); */
+    color: var(--color-color-stone50);
     font-weight: bold;
     text-decoration: none;
     cursor: pointer;
@@ -137,6 +137,9 @@ h1,h2,h3,h4 {
         font-size: var(--font-size-s)
     }
 
+    h4 {
+        font-size: var(--font-size-x1)}
+
     h3 {
         font-size: var(--font-size-x2)}
 
@@ -158,6 +161,9 @@ h1,h2,h3,h4 {
 
     body {
         font-size: var(--font-size-base)}
+
+    h4 {
+        font-size: var(--font-size-x2)}
 
 
     h3 {
@@ -183,6 +189,10 @@ h1,h2,h3,h4 {
         font-size: var(--font-size-x1)
     }
 
+    h4 {
+        font-size: var(--font-size-x3)
+    }
+
     h3 {
         font-size: var(--font-size-x4)}
     
@@ -195,7 +205,7 @@ h1,h2,h3,h4 {
 
     .container {
         /* max-width: 769px; */
-        max-width: 80%;
+        max-width: 90%;
     }
 
 }
@@ -205,6 +215,9 @@ h1,h2,h3,h4 {
     body {
         font-size: var(--font-size-x2)
     }
+
+    h4 {
+        font-size: var(--font-size-x4)}
 
     h3 {
         font-size: var(--font-size-x5)}
@@ -217,7 +230,7 @@ h1,h2,h3,h4 {
 
     .container {
         /* max-width: 1025px; */
-        max-width: 75%;
+        max-width: 90%;
         
     }
 
@@ -227,6 +240,10 @@ h1,h2,h3,h4 {
 @media (min-width: 1201px) {
     body {
         font-size: var(--font-size-x3)
+    }
+
+    h4 {
+        font-size: var(--font-size-x5)
     }
 
     h3 {
@@ -240,7 +257,7 @@ h1,h2,h3,h4 {
 
     .container {
         /* max-width: 1201px; */
-        max-width: 70%;
+        max-width: 80%;
     }
 
 }
