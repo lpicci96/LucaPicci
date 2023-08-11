@@ -1,0 +1,48 @@
+.footer {
+    padding-bottom: 1rem;
+}
+
+
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer__text {
+    color: var(--color-stone300);
+    font-weight: regular;
+}
+
+.footer__vite-link {
+    font-weight: normal;
+}
+
+.footer__social-icon {
+    color: var(--color-stone300)
+}
+
+
+/* mobile above 320 */
+/* @media (min-width: 320px){} */
+
+/* tablet above 481*/
+/* @media (min-width: 481px) {} */
+
+/* laptop and small screen above 769 */
+@media (min-width: 769px) {
+    .footer__container {
+        flex-direction: row;
+    }
+}
+
+/* large screen and desktop above 1025 */
+/* @media (min-width: 1025px) {} */
+
+/* extra large screen above 1201 */
+/* @media (min-width: 1201px) {} */
+
+/* Extra Extra large */
+/* @media (min-width: 1281px) {} */

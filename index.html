@@ -21,9 +21,9 @@
       <div class="header__menu">
         <nav>
           <ul class="header__menu-list">
-            <li><a class="header__menu-link" href="#what_i_do">What I do</a></li>
+            <li><a class="header__menu-link" href="#what-i-do">What I do</a></li>
             <li><a class="header__menu-link" href="#my-work">My work</a></li>
-            <li><a class="header__menu-link" href="#">About me</a></li>
+            <li><a class="header__menu-link" href="#about-me">About me</a></li>
           </ul>
 
           <!-- bar button for mobile -->
@@ -41,9 +41,9 @@
     <div class="mobile-nav">
       <nav>
         <ul class="mobile-nav__menu">
-          <li><a class="mobile-nav__menu-link" href="#what_i_do">What I do</a></li>
+          <li><a class="mobile-nav__menu-link" href="#what-i-do">What I do</a></li>
           <li><a class="mobile-nav__menu-link" href="#my-work">My work</a></li>
-          <li><a class="mobile-nav__menu-link" href="#">About me</a></li>
+          <li><a class="mobile-nav__menu-link" href="#about-me">About me</a></li>
         </ul>
       </nav>
 
@@ -60,17 +60,17 @@
           <p  class="hero__content">I'm a senior data analyst at <a>the ONE Campaign</a>.</p>
           <p  class="hero__content">I build data visualizations, tools, and analyses to understand and tackle the most challenging issues in international development.</p>
           
-          <div class="hero__social">
-            <a class="fa fa-github hero__social-icon" href="https://github.com/lpicci96" target="_blank"></a>
-            <a class="fa fa-twitter hero__social-icon" href="https://twitter.com/lpicci96" target="_blank"></a>
-            <a class="fa fa-linkedin hero__social-icon" href="https://www.linkedin.com/in/luca-picci-589735b3/" target="_blank"></a>
-            <a class="fa fa-envelope hero__social-icon" href="mailto:lpicci96@gmail.com" target="_blank"></a>
+          <div class="social__container hero__social-container">
+            <a class="fa fa-github social__icon" href="https://github.com/lpicci96" target="_blank"></a>
+            <a class="fa fa-twitter social__icon" href="https://twitter.com/lpicci96" target="_blank"></a>
+            <a class="fa fa-linkedin social__icon" href="https://www.linkedin.com/in/luca-picci-589735b3/" target="_blank"></a>
+            <a class="fa fa-envelope social__icon" href="mailto:lpicci96@gmail.com" target="_blank"></a>
           </div>
       </section>
 
       <!-- What I do -->
       <section class="skills container">
-        <h3 id="what_i_do">What I do</h3>
+        <h3 id="what-i-do">What I do</h3>
         <ul class="skills__list">
           <li class="skills-item">Data Analysis and Visualization</li>
           <li class="skills-item">Python Development</li>
@@ -221,41 +221,59 @@
 
 
       <!-- About -->
-
       <section class="container">
-        <h3>About me</h3>
-
+        <h3 class="about__title" id="about-me">About me</h3>
         <div class="about__container">
-          <div>
-            <img class="about__img" src="/about-me-blur-crop.png">
+          <div class="about__img-container">
+            <img src="/about-me-blur-crop.png" alt="Photo of Luca smiling">
           </div>
-          
           <div class="about__description">
-            <p>Proident eu ipsum dolor amet dolor id adipisicing elit fugiat incididunt qui. In amet deserunt anim do ut fugiat dolore ad. Non esse reprehenderit nisi dolor labore. Sunt duis Lorem irure sunt.</p>
+            <p>I am passionate about using data to understand complex global issues and to help decision-makers make better decisions.
+            </p>
+            <p>
+              Currently, I work as a senior data analyst at the 
+              <a href="https://www.one.org/" target="_blank">ONE Campaign</a>, a global advocacy organization. I 
+              build data-driven content and tools to raise awareness about global issues and support our advocacy efforts.
+              <a href="https://data.one.org/" target="_blank">
+                Check out some of our work around these issues.
+              </a>
+            </p>
+            <p>
+             I am originally from Sardinia, but I have lived in many places around the world. I am currently based in Paris, France.
+            </p>
+            <p>
+              Reach out if you would like to collaborate on a project or chat about my work!
+            </p>
+            <div class="about__reachout-btn">
+              <button class="about__reachout-btn btn">
+                <a class="about__reachout-link" href="mailto:lpicci96@gmail.com" target="_blank">Reach Out</a>
+              </button>
+            </div>
           </div>
         </div>
-
-
-
-
-
-
       </section>
 
-      
-
-      
-      
-      
-    
-
-
-
-
-
-
     </main>
-    <footer></footer>
+
+    <!-- Footer -->
+    <footer class="footer container">
+      <div class="footer__container">
+        <span class="footer__text">Copyright © Luca Picci 2023</span>
+        <div class="social__container">
+          <a class="fa fa-github social__icon footer__social-icon" href="https://github.com/lpicci96" target="_blank"></a>
+          <a class="fa fa-twitter social__icon footer__social-icon" href="https://twitter.com/lpicci96" target="_blank"></a>
+          <a class="fa fa-linkedin social__icon footer__social-icon" href="https://www.linkedin.com/in/luca-picci-589735b3/" target="_blank"></a>
+          <a class="fa fa-envelope social__icon footer__social-icon" href="mailto:lpicci96@gmail.com" target="_blank"></a>
+        </div>
+        <span class="footer__text">Built with
+          <a class="footer__vite-link" href="https://vitejs.dev/" target="_blank">
+            Vite
+          </a>
+        </span>
+      </div>
+    </footer>
+
+
     <script type="module" src="./src/main.js"></script>
   </body>
 </html>

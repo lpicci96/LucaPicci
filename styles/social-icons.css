@@ -1,0 +1,55 @@
+.social__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    /* margin-top: 1.5rem; */
+}
+
+.social__icon {
+    color: var(--color-font-grey);
+    font-size: var(--font-size-x2);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.social__icon:hover {
+    color: var(--color-font-indigo-base);
+    transform: translateY(-2px);
+}
+
+
+/* mobile above 320 */
+/* @media (min-width: 320px){} */
+
+/* tablet above 481*/
+@media (min-width: 481px) {
+    .social__icon {
+        font-size: var(--font-size-x3);
+    }
+}
+
+/* laptop and small screen above 769 */
+@media (min-width: 769px) {
+    .social__icon {
+        font-size: var(--font-size-x4);
+    }
+}
+
+/* large screen and desktop above 1025 */
+@media (min-width: 1025px) {
+    .social__icon {
+        font-size: var(--font-size-x5);
+    }
+}
+
+/* extra large screen above 1201 */
+@media (min-width: 1201px) {
+    .social__icon {
+        font-size: var(--font-size-x6);
+    }
+}
+
+/* Extra Extra large */
+/* @media (min-width: 1281px) {} */

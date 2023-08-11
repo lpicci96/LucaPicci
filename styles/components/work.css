@@ -15,8 +15,12 @@
 }
 
 .work__project-contents {
-    margin-bottom: 4rem;
+    margin-bottom: 1.5rem;
 
+}
+
+.work__project-contents:last-child {
+    margin-bottom: 0;
 }
 
 
@@ -40,6 +44,11 @@
     .work__project-description {
         font-size: var(--font-size-s);
     }
+
+    .work__project-contents {
+        margin-bottom: 2rem;
+    
+    }
 }
 
 /* laptop and small screen above 769 */
@@ -51,6 +60,11 @@
 
     .work__project-description {
         font-size: var(--font-size-s);
+    }
+
+    .work__project-contents {
+        margin-bottom: 4rem;
+    
     }
 }
 
