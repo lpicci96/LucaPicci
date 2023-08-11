@@ -1,0 +1,18 @@
+.about__container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border: 1px solid #ccc;
+    /* flex-wrap: wrap; */
+
+}
+
+.about__img {
+    max-width: 40%;
+    height: auto;
+}
+
+.about__description {
+    max-width: 60%;
+    padding: 1rem;
+}
