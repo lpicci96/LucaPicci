@@ -2,18 +2,280 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/headshot.jpg" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dev Portfolio</title>
-    <script type="module" crossorigin src="/assets/index-66c2d315.js"></script>
+
+    <!-- Font family -->
+    <link href="https://api.fontshare.com/v2/css?f[]=ranade@700,300,400,500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="module" crossorigin src="/assets/index-104bc5a8.js"></script>
+    <link rel="stylesheet" href="/assets/index-36c72168.css">
   </head>
-    <body>
+  <body>
+
+    <!-- header and navigation -->
+    <header class="header container">
+      <div class="header__title">
+        <h2>Luca Picci</h3>
+      </div>
+      <div class="header__menu">
+        <nav>
+          <ul class="header__menu-list">
+            <li><a class="header__menu-link" href="#what-i-do">What I do</a></li>
+            <li><a class="header__menu-link" href="#my-work">My work</a></li>
+            <li><a class="header__menu-link" href="#about-me">About me</a></li>
+          </ul>
+
+          <!-- bar button for mobile -->
+          <button class="header__mobile-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>            
+          </button>
+        </nav>
+      </div>
+
+    </header>
+
+    <!-- Mobile navigation window -->
+    <div class="mobile-nav">
+      <nav>
+        <ul class="mobile-nav__menu">
+          <li><a class="mobile-nav__menu-link" href="#what-i-do">What I do</a></li>
+          <li><a class="mobile-nav__menu-link" href="#my-work">My work</a></li>
+          <li><a class="mobile-nav__menu-link" href="#about-me">About me</a></li>
+        </ul>
+      </nav>
+
+
+    </div>
+
     <main>
-      <h1>Under Construction</h1>
+
+      <!-- Hero -->
+      <section class="hero container">
+        <img class="hero__headshot" src="/headshot.jpg" alt="headshot portfolio picture of Luca">
+        <div>
+          <p  class="hero__content">Hi, I'm <strong>Luca</strong>.</p>
+          <p  class="hero__content">I'm a senior data analyst at <a>the ONE Campaign</a>.</p>
+          <p  class="hero__content">I build data visualizations, tools, and analyses to understand and tackle the most challenging issues in international development.</p>
+          
+          <div class="social__container hero__social-container">
+            <a class="fa fa-github social__icon" href="https://github.com/lpicci96" target="_blank"></a>
+            <a class="fa fa-twitter social__icon" href="https://twitter.com/lpicci96" target="_blank"></a>
+            <a class="fa fa-linkedin social__icon" href="https://www.linkedin.com/in/luca-picci-589735b3/" target="_blank"></a>
+            <a class="fa fa-envelope social__icon" href="mailto:lpicci96@gmail.com" target="_blank"></a>
+          </div>
+      </section>
+
+      <!-- What I do -->
+      <section class="skills container">
+        <h3 id="what-i-do">What I do</h3>
+        <ul class="skills__list">
+          <li class="skills-item">Data Analysis and Visualization</li>
+          <li class="skills-item">Python Development</li>
+          <li class="skills-item">Economic and Policy Research</li>
+        </ul>
+
+        <h4>Technologies I use</h3>
+        <ul class="skills__technologies-list">
+            <li class="skills__technology-item">Python</li>
+            <li class="skills__technology-item">R</li>
+            <li class="skills__technology-item">SQL</li>
+            <li class="skills__technology-item">JavaScript</li>
+            <li class="skills__technology-item">HTML</li>
+            <li class="skills__technology-item">CSS</li>
+            <li class="skills__technology-item">MongoDB</li>
+            <li class="skills__technology-item">Stata</li>
+            <li class="skills__technology-item">Flourish</li>
+            <li class="skills__technology-item">Tableau</li>
+            <li class="skills__technology-item">WordPress</li>
+            <li class="skills__technology-item">Git</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- My Work section -->
+      <section class="container">
+        <h3 class="work__title" id="my-work">Explore some of my work</h3>
+
+        <!-- Project 1 Gender DataDive -->
+        <div class="work__container">
+          <div>
+            <a href="https://data.one.org/data-dives/women-arent-given-power-they-make-it/" target="_blank"><img src="/projects/gender.gif"></a>
+            <div class="work__project-contents">
+              <h4 class="work__project-title">
+                <a href="https://data.one.org/data-dives/women-arent-given-power-they-make-it/" target="_blank">
+                  Women aren't given power. They make it
+                </a>
+              </h4>
+              <div class="work__project-description">
+                <p>How gender inequality is preventing progress in human development</p>
+                <a class="fa fa-code" href="https://github.com/ONEcampaign/DataDive_Gender" target="_blank"> 
+                  Access the respository
+                </a>
+                <div class="fa fa-wrench"> Python, Flourish, CSS, Wordpress</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 Health Financing-->
+          <div class="work__project-contents">
+            <a href = "https://data.one.org/topics/health-financing/" target="_blank">
+              <img class="work__img" src="/projects/health_financing.gif">
+            </a>
+            <div>
+              <h4 class="work__project-title">
+                <a href="https://data.one.org/topics/health-financing/" target="_blank">
+                  Health Financing
+                </a>
+              </h4>
+              <div class="work__project-description">
+                <p>How much do countries spend on health, where does that money come from, and how is it spent?</p>
+                <a class="fa fa-code" href="https://github.com/ONEcampaign/topic_health_financing" target="_blank"> 
+                  Access the repository
+                </a>
+                <div class="fa fa-wrench"> Python, Flourish</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 unesco-reader-->
+          <div class="work__project-contents">
+            <a href="https://pypi.org/project/unesco-reader/" target="_blank">
+              <img class="work__img" src="/projects/unesco_reader.gif">
+            </a>
+            <div>
+              <h4 class="work__project-title">
+                <a href="https://pypi.org/project/unesco-reader/" target="_blank">
+                  unesco-reader
+                </a>
+              </h4>
+              <div class="work__project-description">
+                <p>A Python package to access UNESCO data</p>
+                <a class="fa fa-code" href="https://github.com/lpicci96/unesco_reader" target="_blank"> 
+                  Access the code
+                </a>
+                <div class="fa fa-wrench"> Python</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 IPSOS survey Tableau dashboard-->
+          <div class="work__project-contents">
+            <a href="https://public.tableau.com/views/AddressingVaccineInequitySurvey/AddressingVaccineInequitySurvey?:language=en-US&:display_count=n&:origin=viz_share_link" target="_blank">
+              <img src="/projects/vaccine_equity.png">
+            </a>
+            <div>
+              <h4 class="work__project-title">
+                <a href="https://public.tableau.com/views/AddressingVaccineInequitySurvey/AddressingVaccineInequitySurvey?:language=en-US&:display_count=n&:origin=viz_share_link" target="_blank">
+                  Addressing Vaccine Inequality
+                </a>
+              </h4>
+              <div class="work__project-description">
+                <p>Dashboard for the ONE Campaign using IPSOS data</p>
+                <div class="fa fa-wrench"> Python, Tableau</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 DuBois TidyTuesday and others -->
+          <div class="work__project-contents">
+            <a href="https://github.com/lpicci96/visualizations" target="_blank">
+              <img src="/projects/tidyTuesday.png">
+            </a>
+            <div>
+              <h4 class="work__project-title">
+                <a href="https://github.com/lpicci96/visualizations" target="_blank">
+                  #TidyTuesday #DuBois and other challenges
+                </a>
+              </h4>
+              <div class="work__project-description">
+                <p>My contributions to various Twitter challenges</p>
+                <div class="fa fa-wrench"> R, Python, Tableau</div>
+              </div>
+            </div>
+          </div>
+
+            <!-- Project 5 FlipbookR -->
+          <div class="work__project-contents">
+            <a href="https://posit.co/blog/building-code-movies-with-flipbookr/" target="_blank">
+              <img src="/projects/flipbookR.gif">
+            </a>
+            <div>
+              <h4 class="work__project-title">
+                <a href="https://posit.co/blog/building-code-movies-with-flipbookr/" target="_blank">
+                  FlipbookR package demos
+                </a>
+              </h4>
+              <div class="work__project-description">
+                <p>Contribution to Gina Reynold's FlipbookR package</p>
+                <div class="fa fa-wrench"> R</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        
+      </section>
+
+
+      <!-- About -->
+      <section class="container">
+        <h3 class="about__title" id="about-me">About me</h3>
+        <div class="about__container">
+          <div class="about__img-container">
+            <img src="/about-me-blur-crop.png" alt="Photo of Luca smiling">
+          </div>
+          <div class="about__description">
+            <p>I am passionate about using data to understand complex global issues and to help decision-makers make better decisions.
+            </p>
+            <p>
+              Currently, I work as a senior data analyst at the 
+              <a href="https://www.one.org/" target="_blank">ONE Campaign</a>, a global advocacy organization. I 
+              build data-driven content and tools to raise awareness about global issues and support our advocacy efforts.
+              <a href="https://data.one.org/" target="_blank">
+                Check out some of our work around these issues.
+              </a>
+            </p>
+            <p>
+             I am originally from Sardinia, but I have lived in many places around the world. I am currently based in Paris, France.
+            </p>
+            <p>
+              Reach out if you would like to collaborate on a project or chat about my work!
+            </p>
+            <div class="about__reachout-btn">
+              <button class="about__reachout-btn btn">
+                <a class="about__reachout-link" href="mailto:lpicci96@gmail.com" target="_blank">Reach Out</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </main>
 
+    <!-- Footer -->
+    <footer class="footer container">
+      <div class="footer__container">
+        <span class="footer__text">Copyright © Luca Picci 2023</span>
+        <div class="social__container">
+          <a class="fa fa-github social__icon footer__social-icon" href="https://github.com/lpicci96" target="_blank"></a>
+          <a class="fa fa-twitter social__icon footer__social-icon" href="https://twitter.com/lpicci96" target="_blank"></a>
+          <a class="fa fa-linkedin social__icon footer__social-icon" href="https://www.linkedin.com/in/luca-picci-589735b3/" target="_blank"></a>
+          <a class="fa fa-envelope social__icon footer__social-icon" href="mailto:lpicci96@gmail.com" target="_blank"></a>
+        </div>
+        <span class="footer__text">Built with
+          <a class="footer__vite-link" href="https://vitejs.dev/" target="_blank">
+            Vite
+          </a>
+        </span>
+      </div>
+    </footer>
 
-    
+
     
   </body>
 </html>
