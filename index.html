@@ -22,7 +22,7 @@
         <nav>
           <ul class="header__menu-list">
             <li><a class="header__menu-link" href="#what_i_do">What I do</a></li>
-            <li><a class="header__menu-link" href="#">My work</a></li>
+            <li><a class="header__menu-link" href="#my-work">My work</a></li>
             <li><a class="header__menu-link" href="#">About me</a></li>
           </ul>
 
@@ -42,7 +42,7 @@
       <nav>
         <ul class="mobile-nav__menu">
           <li><a class="mobile-nav__menu-link" href="#what_i_do">What I do</a></li>
-          <li><a class="mobile-nav__menu-link" href="#">My work</a></li>
+          <li><a class="mobile-nav__menu-link" href="#my-work">My work</a></li>
           <li><a class="mobile-nav__menu-link" href="#">About me</a></li>
         </ul>
       </nav>
@@ -97,43 +97,125 @@
 
       <!-- My Work section -->
       <section class="container">
-        <h3 class="work__title">My work</h3>
+        <h3 class="work__title" id="my-work">Explore some of my work</h3>
 
-        <!-- Project 1 -->
+        <!-- Project 1 Gender DataDive -->
         <div class="work__container">
           <div>
-            <img class="work__img" src="/projects/gender.gif">
-            <!-- <video autoplay loop>
-              <source src="/projects/gender.mp4#version=111" type="video/mp4">
-            </video> -->
-            <div>
-              <h4 class="work__project-title"><a>Women aren't given power. They make it</a></h4>
+            <a href="https://data.one.org/data-dives/women-arent-given-power-they-make-it/" target="_blank"><img src="/projects/gender.gif"></a>
+            <div class="work__project-contents">
+              <h4 class="work__project-title">
+                <a href="https://data.one.org/data-dives/women-arent-given-power-they-make-it/" target="_blank">
+                  Women aren't given power. They make it
+                </a>
+              </h4>
               <div class="work__project-description">
-                <p>Explore how gender inequality is preventing progress in human development</p>
-                <a class="fa fa-code" href="https://github.com/ONEcampaign/DataDive_Gender" target="_blank"> Access the code</a>
-                <div class="fa fa-wrench"> Python, Wordpress, CSS, Flourish</div>
+                <p>How gender inequality is preventing progress in human development</p>
+                <a class="fa fa-code" href="https://github.com/ONEcampaign/DataDive_Gender" target="_blank"> 
+                  Access the respository
+                </a>
+                <div class="fa fa-wrench"> Python, Flourish, CSS, Wordpress</div>
               </div>
             </div>
           </div>
 
-          <!-- Project 2 -->
-          <div>
-            <img class="work__img" src="/projects/test.gif">
+          <!-- Project 2 Health Financing-->
+          <div class="work__project-contents">
+            <a href = "https://data.one.org/topics/health-financing/" target="_blank">
+              <img class="work__img" src="/projects/health_financing.gif">
+            </a>
             <div>
-              <h4 class="work__project-title"><a>this is a very ling title that spans across multiple lines</a></h4>
+              <h4 class="work__project-title">
+                <a href="https://data.one.org/topics/health-financing/" target="_blank">
+                  Health Financing
+                </a>
+              </h4>
+              <div class="work__project-description">
+                <p>How much do countries spend on health, where does that money come from, and how is it spent?</p>
+                <a class="fa fa-code" href="https://github.com/ONEcampaign/topic_health_financing" target="_blank"> 
+                  Access the repository
+                </a>
+                <div class="fa fa-wrench"> Python, Flourish</div>
+              </div>
             </div>
           </div>
-          <div>
-            <img class="work__img" src="/projects/unesco_reader.gif">
+
+          <!-- Project 3 unesco-reader-->
+          <div class="work__project-contents">
+            <a href="https://pypi.org/project/unesco-reader/" target="_blank">
+              <img class="work__img" src="/projects/unesco_reader.gif">
+            </a>
             <div>
-              <h4 class="work__project-title"><a>this is a very ling title that spans across multiple lines</a></h4>
+              <h4 class="work__project-title">
+                <a href="https://pypi.org/project/unesco-reader/" target="_blank">
+                  unesco-reader
+                </a>
+              </h4>
+              <div class="work__project-description">
+                <p>A Python package to access UNESCO data</p>
+                <a class="fa fa-code" href="https://github.com/lpicci96/unesco_reader" target="_blank"> 
+                  Access the code
+                </a>
+                <div class="fa fa-wrench"> Python</div>
+              </div>
             </div>
           </div>
-          <div>
-            <img class="work__img" src="https://placehold.co/600x400?text=Hello+World">
+
+          <!-- Project 4 IPSOS survey Tableau dashboard-->
+          <div class="work__project-contents">
+            <a href="https://public.tableau.com/views/AddressingVaccineInequitySurvey/AddressingVaccineInequitySurvey?:language=en-US&:display_count=n&:origin=viz_share_link" target="_blank">
+              <img src="/projects/vaccine_equity.png">
+            </a>
+            <div>
+              <h4 class="work__project-title">
+                <a href="https://public.tableau.com/views/AddressingVaccineInequitySurvey/AddressingVaccineInequitySurvey?:language=en-US&:display_count=n&:origin=viz_share_link" target="_blank">
+                  Addressing Vaccine Inequality
+                </a>
+              </h4>
+              <div class="work__project-description">
+                <p>Dashboard for the ONE Campaign using IPSOS data</p>
+                <div class="fa fa-wrench"> Python, Tableau</div>
+              </div>
+            </div>
           </div>
+
+          <!-- Project 4 DuBois TidyTuesday and others -->
+          <div class="work__project-contents">
+            <a href="https://github.com/lpicci96/visualizations" target="_blank">
+              <img src="/projects/tidyTuesday.png">
+            </a>
+            <div>
+              <h4 class="work__project-title">
+                <a href="https://github.com/lpicci96/visualizations" target="_blank">
+                  #TidyTuesday #DuBois and other challenges
+                </a>
+              </h4>
+              <div class="work__project-description">
+                <p>My contributions to various Twitter challenges</p>
+                <div class="fa fa-wrench"> R, Python, Tableau</div>
+              </div>
+            </div>
+          </div>
+
+            <!-- Project 5 FlipbookR -->
+          <div class="work__project-contents">
+            <a href="https://posit.co/blog/building-code-movies-with-flipbookr/" target="_blank">
+              <img src="/projects/flipbookR.gif">
+            </a>
+            <div>
+              <h4 class="work__project-title">
+                <a href="https://posit.co/blog/building-code-movies-with-flipbookr/" target="_blank">
+                  FlipbookR package demos
+                </a>
+              </h4>
+              <div class="work__project-description">
+                <p>Contribution to Gina Reynold's FlipbookR package</p>
+                <div class="fa fa-wrench"> R</div>
+              </div>
+            </div>
+          </div>
+
         </div>
-        
         
       </section>
 
