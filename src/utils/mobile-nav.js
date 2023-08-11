@@ -9,26 +9,26 @@ const mobileNav = () => {
 
     //logic for opening and closing the mobile nav
     headerBtn.addEventListener('click', () => {
-        console.log('click')
-        isMobileNavOpen =! isMobileNavOpen // toggle
-        console.log(isMobileNavOpen)
+        console.log('click');
+        isMobileNavOpen =! isMobileNavOpen; // toggle
+        console.log(isMobileNavOpen);
 
         //if user clicks on the button, display the mobile nav
         if (isMobileNavOpen) {
-            mobileNav.style.display = "flex"
+            mobileNav.style.display = "flex";
         }
         //if user clicks on the button to close, hide the mobile nav
         else {
-            mobileNav.style.display = "none"
+            mobileNav.style.display = "none";
         }
     })
 
     //logic for clicking on the links in the mobile nav
     mobileLinks.forEach(link => {
         link.addEventListener('click', () => {
-            isMobileNavOpen =! isMobileNavOpen // toggle
-            console.log(isMobileNavOpen)
-            mobileNav.style.display = "none"
+            isMobileNavOpen =! isMobileNavOpen; // toggle
+            console.log(isMobileNavOpen);
+            mobileNav.style.display = "none";
         })
     })
     
