@@ -136,20 +136,24 @@ h1,h2,h3,h4 {
 @media (min-width: 320px){
 
     body {
-        font-size: var(--font-size-s)
+        font-size: var(--font-size-s);
     }
 
     h4 {
-        font-size: var(--font-size-x1)}
+        font-size: var(--font-size-x1);
+    }
 
     h3 {
-        font-size: var(--font-size-x2)}
+        font-size: var(--font-size-x2);
+    }
 
     h2 {
-        font-size: var(--font-size-x3)}
+        font-size: var(--font-size-x3);
+    }
 
     h1 {
-        font-size: var(--font-size-x4)}
+        font-size: var(--font-size-x4);
+    }
 
     .container {
         /* max-width: 320px; */
@@ -162,20 +166,25 @@ h1,h2,h3,h4 {
 @media (min-width: 481px) {
 
     body {
-        font-size: var(--font-size-base)}
+        font-size: var(--font-size-base);
+    }
 
     h4 {
-        font-size: var(--font-size-x2)}
+        font-size: var(--font-size-x2);
+    }
 
 
     h3 {
-        font-size: var(--font-size-x3)}
+        font-size: var(--font-size-x3);
+    }
 
     h2 {
-        font-size: var(--font-size-x4)}
+        font-size: var(--font-size-x4);
+    }
 
     h1 {
-        font-size: var(--font-size-x5)}
+        font-size: var(--font-size-x5);
+    }
 
 
     /* .container {
@@ -188,21 +197,24 @@ h1,h2,h3,h4 {
 @media (min-width: 769px) {
 
     body {
-        font-size: var(--font-size-x1)
+        font-size: var(--font-size-x1);
     }
 
     h4 {
-        font-size: var(--font-size-x3)
+        font-size: var(--font-size-x3);
     }
 
     h3 {
-        font-size: var(--font-size-x4)}
+        font-size: var(--font-size-x4);
+    }
     
     h2 {
-        font-size: var(--font-size-x5)}
+        font-size: var(--font-size-x5);
+    }
 
     h1 {
-        font-size: var(--font-size-x6)}
+        font-size: var(--font-size-x6);
+    }
 
 
     .container {
@@ -216,20 +228,24 @@ h1,h2,h3,h4 {
 /* large screen and desktop above 1025 */
 @media (min-width: 1025px) {
     body {
-        font-size: var(--font-size-x2)
+        font-size: var(--font-size-x2);
     }
 
     h4 {
-        font-size: var(--font-size-x4)}
+        font-size: var(--font-size-x4);
+    }
 
     h3 {
-        font-size: var(--font-size-x5)}
+        font-size: var(--font-size-x5);
+    }
 
     h2 {
-        font-size: var(--font-size-x6)}
+        font-size: var(--font-size-x6);
+    }
 
     h1 {
-        font-size: var(--font-size-x7)}
+        font-size: var(--font-size-x7);
+    }
 
     .container {
         /* max-width: 1025px; */
@@ -242,21 +258,24 @@ h1,h2,h3,h4 {
 /* extra large screen above 1201 */
 @media (min-width: 1201px) {
     body {
-        font-size: var(--font-size-x3)
+        font-size: var(--font-size-x3);
     }
 
     h4 {
-        font-size: var(--font-size-x5)
+        font-size: var(--font-size-x5);
     }
 
     h3 {
-        font-size: var(--font-size-x6)}
+        font-size: var(--font-size-x6);
+    }
 
     h2 {
-        font-size: var(--font-size-x7)}
+        font-size: var(--font-size-x7);
+    }
 
     h1 {
-        font-size: var(--font-size-x8)}
+        font-size: var(--font-size-x8);
+    }
 
     .container {
         /* max-width: 1201px; */
@@ -269,7 +288,7 @@ h1,h2,h3,h4 {
 @media (min-width: 1281px) {
 
     body {
-        font-size: var(--font-size-x4)
+        font-size: var(--font-size-x4);
     }
     .container {
         max-width: 1281px;
