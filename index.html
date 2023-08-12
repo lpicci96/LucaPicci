@@ -2,14 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- <link rel="icon" type="image/svg+xml" href="/headshot.jpg" /> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dev Portfolio</title>
+    <link rel="icon" type="image/png" href="/LucaPicci/favicon.png" />
 
     <!-- Font family -->
     <link href="https://api.fontshare.com/v2/css?f[]=ranade@700,300,400,500&display=swap" rel="stylesheet">
-
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luca Picci</title>
+    <meta name="description" content="Luca Picci's personal website" />
+    <meta name="keywords" content="Luca Picci, Luca, Picci, data, international development, data visualization, Python" />
+
+
     <script type="module" crossorigin src="/LucaPicci/assets/index-c870a981.js"></script>
     <link rel="stylesheet" href="/LucaPicci/assets/index-04d3810a.css">
   </head>
@@ -29,7 +35,7 @@
           </ul>
 
           <!-- bar button for mobile -->
-          <button class="header__mobile-btn">
+          <button class="header__mobile-btn" aria-label="mobile navigation button">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
             </svg>            
@@ -63,10 +69,10 @@
           <p  class="hero__content">I build data visualizations, tools, and analyses to understand and tackle the most challenging issues in international development.</p>
           
           <div class="social__container hero__social-container">
-            <a class="fa fa-github social__icon" href="https://github.com/lpicci96" target="_blank"></a>
-            <a class="fa fa-twitter social__icon" href="https://twitter.com/lpicci96" target="_blank"></a>
-            <a class="fa fa-linkedin social__icon" href="https://www.linkedin.com/in/luca-picci-589735b3/" target="_blank"></a>
-            <a class="fa fa-envelope social__icon" href="mailto:lpicci96@gmail.com" target="_blank"></a>
+            <a class="fa fa-github social__icon" href="https://github.com/lpicci96" target="_blank" aria-label="GitHub link"></a>
+            <a class="fa fa-twitter social__icon" href="https://twitter.com/lpicci96" target="_blank" aria-label="Twitter link"></a>
+            <a class="fa fa-linkedin social__icon" href="https://www.linkedin.com/in/luca-picci-589735b3/" target="_blank" aria-label="LinkedIn link"></a>
+            <a class="fa fa-envelope social__icon" href="mailto:lpicci96@gmail.com" target="_blank" aria-label="Email link"></a>
           </div>
       </section>
 
@@ -104,7 +110,9 @@
         <!-- Project 1 Gender DataDive -->
         <div class="work__container">
           <div>
-            <a href="https://data.one.org/data-dives/women-arent-given-power-they-make-it/" target="_blank"><img src="/LucaPicci/projects/gender.gif"></a>
+            <a href="https://data.one.org/data-dives/women-arent-given-power-they-make-it/" target="_blank">
+              <img loading="lazy" src="/LucaPicci/projects/gender.gif" alt="GIF scrolling a webpage">
+            </a>
             <div class="work__project-contents">
               <h4 class="work__project-title">
                 <a href="https://data.one.org/data-dives/women-arent-given-power-they-make-it/" target="_blank">
@@ -124,7 +132,7 @@
           <!-- Project 2 Health Financing-->
           <div class="work__project-contents">
             <a href = "https://data.one.org/topics/health-financing/" target="_blank">
-              <img class="work__img" src="/LucaPicci/projects/health_financing.gif">
+              <img loading="lazy" class="work__img" src="/LucaPicci/projects/health_financing.gif" alt="GIF scrolling a webpage">
             </a>
             <div>
               <h4 class="work__project-title">
@@ -145,7 +153,7 @@
           <!-- Project 3 unesco-reader-->
           <div class="work__project-contents">
             <a href="https://pypi.org/project/unesco-reader/" target="_blank">
-              <img class="work__img" src="/LucaPicci/projects/unesco_reader.gif">
+              <img loading="lazy" class="work__img" src="/LucaPicci/projects/unesco_reader.gif" alt="GIF scrolling a webpage">
             </a>
             <div>
               <h4 class="work__project-title">
@@ -166,7 +174,7 @@
           <!-- Project 4 IPSOS survey Tableau dashboard-->
           <div class="work__project-contents">
             <a href="https://public.tableau.com/views/AddressingVaccineInequitySurvey/AddressingVaccineInequitySurvey?:language=en-US&:display_count=n&:origin=viz_share_link" target="_blank">
-              <img src="/LucaPicci/projects/vaccine_equity.png">
+              <img loading="lazy" src="/LucaPicci/projects/vaccine_equity.png" alt="Screenshot of a Tableau dashboard">
             </a>
             <div>
               <h4 class="work__project-title">
@@ -184,7 +192,7 @@
           <!-- Project 4 DuBois TidyTuesday and others -->
           <div class="work__project-contents">
             <a href="https://github.com/lpicci96/visualizations" target="_blank">
-              <img src="/LucaPicci/projects/tidyTuesday.png">
+              <img loading="lazy" src="/LucaPicci/projects/tidyTuesday.png" alt="Screenshot of a Du Bois bar chart recreation">
             </a>
             <div>
               <h4 class="work__project-title">
@@ -202,7 +210,7 @@
             <!-- Project 5 FlipbookR -->
           <div class="work__project-contents">
             <a href="https://posit.co/blog/building-code-movies-with-flipbookr/" target="_blank">
-              <img src="/LucaPicci/projects/flipbookR.gif">
+              <img loading="lazy" src="/LucaPicci/projects/flipbookR.gif" alt="GIF scrolling a code movie">
             </a>
             <div>
               <h4 class="work__project-title">
@@ -227,7 +235,7 @@
         <h3 class="about__title" id="about-me">About me</h3>
         <div class="about__container">
           <div class="about__img-container">
-            <img src="/LucaPicci/about-me-blur-crop.png" alt="Photo of Luca smiling">
+            <img loading="lazy" src="/LucaPicci/about-me-blur-crop.png" alt="Photo of Luca smiling">
           </div>
           <div class="about__description">
             <p>I am passionate about using data to understand complex global issues and to help decision-makers make better decisions.
@@ -247,7 +255,7 @@
               Reach out if you would like to collaborate on a project or chat about my work!
             </p>
             <div class="about__reachout-btn">
-              <button class="about__reachout-btn btn">
+              <button class="about__reachout-btn btn" aria-label="Reach out button">
                 <a class="about__reachout-link" href="mailto:lpicci96@gmail.com" target="_blank">Reach Out</a>
               </button>
             </div>
@@ -262,10 +270,10 @@
       <div class="footer__container">
         <span class="footer__text">Copyright © Luca Picci 2023</span>
         <div class="social__container">
-          <a class="fa fa-github social__icon footer__social-icon" href="https://github.com/lpicci96" target="_blank"></a>
-          <a class="fa fa-twitter social__icon footer__social-icon" href="https://twitter.com/lpicci96" target="_blank"></a>
-          <a class="fa fa-linkedin social__icon footer__social-icon" href="https://www.linkedin.com/in/luca-picci-589735b3/" target="_blank"></a>
-          <a class="fa fa-envelope social__icon footer__social-icon" href="mailto:lpicci96@gmail.com" target="_blank"></a>
+          <a class="fa fa-github social__icon footer__social-icon" href="https://github.com/lpicci96" target="_blank" aria-label="GitHub link"></a>
+          <a class="fa fa-twitter social__icon footer__social-icon" href="https://twitter.com/lpicci96" target="_blank" aria-label="Twitter link"></a>
+          <a class="fa fa-linkedin social__icon footer__social-icon" href="https://www.linkedin.com/in/luca-picci-589735b3/" target="_blank" aria-label="LinkedIn link"></a>
+          <a class="fa fa-envelope social__icon footer__social-icon" href="mailto:lpicci96@gmail.com" target="_blank" aria-label="Email link"></a>
         </div>
         <span class="footer__text">Built with
           <a class="footer__vite-link" href="https://vitejs.dev/" target="_blank">
@@ -274,7 +282,6 @@
         </span>
       </div>
     </footer>
-
 
     
   </body>
