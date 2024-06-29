@@ -64,7 +64,7 @@
         <div>
           <p  class="hero__content">Hi, I'm <strong>Luca</strong>.</p>
           <p  class="hero__content">I'm a senior data analyst at <a>the ONE Campaign</a>.</p>
-          <p  class="hero__content">I build data visualizations, tools, and analyses to understand and tackle the most challenging issues in international development.</p>
+          <p  class="hero__content">I build data visualisations, tools, and analyses to understand and tackle the most challenging issues in international development.</p>
           
           <div class="social__container hero__social-container">
             <a class="fa fa-github social__icon" href="https://github.com/lpicci96" target="_blank" aria-label="GitHub link"></a>
@@ -78,7 +78,7 @@
       <section class="skills container">
         <h3 id="what-i-do">What I do</h3>
         <ul class="skills__list">
-          <li class="skills-item">Data Analysis and Visualization</li>
+          <li class="skills-item">Data Analysis and Visualisation</li>
           <li class="skills-item">Python Development</li>
           <li class="skills-item">Economic and Policy Research</li>
         </ul>
@@ -105,13 +105,51 @@
       <section class="container">
         <h3 class="work__title" id="my-work">Explore my recent work and projects</h3>
 
-        <!-- Project 1 Gender DataDive -->
         <div class="work__container">
-          <div>
-            <a href="https://data.one.org/data-dives/women-arent-given-power-they-make-it/" target="_blank">
-              <img loading="lazy" src="/projects/gender.gif" alt="GIF scrolling a webpage">
+
+        <!-- Project Vaccine Manufacturing-->
+          <div class="work__project-contents">
+            <a href = "https://data.one.org/topics/health-financing/" target="_blank">
+              <img loading="lazy" src="/projects/vaccines.png" alt="GIF scrolling a webpage">
             </a>
-            <div class="work__project-contents">
+            <div>
+              <h4 class="work__project-title">
+                <a href="https://data.one.org/topics/health-financing/" target="_blank">
+                  Vaccine Manufacturing
+                </a>
+              </h4>
+              <div class="work__project-description">
+                <p>Why it is essential for Africa to build its vaccine manufacturing capacity and reach vaccine sovereignty.</p>
+                <div class="work__project-tools"><span class="fa fa-wrench"></span><span> Python, Flourish, D3.js</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Health Financing-->
+          <div class="work__project-contents">
+            <a href = "https://data.one.org/topics/health-financing/" target="_blank">
+              <img loading="lazy" src="/projects/health_financing.gif" alt="GIF scrolling a webpage">
+            </a>
+            <div>
+              <h4 class="work__project-title">
+                <a href="https://data.one.org/topics/health-financing/" target="_blank">
+                  Health Financing
+                </a>
+              </h4>
+              <div class="work__project-description">
+                <p>How much do countries spend on health, where does that money come from, and how is it spent?</p>
+                <div class="work__project-tools"><span class="fa fa-wrench"></span><span> Python, Flourish</span></div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Project 1 Gender DataDive -->
+          <div class="work__project-contents">
+            <a href="https://data.one.org/data-dives/women-arent-given-power-they-make-it/" target="_blank">
+              <img loading="lazy" src="/projects/genderViz.png" alt="GIF scrolling a webpage">
+            </a>
+            <div>
               <h4 class="work__project-title">
                 <a href="https://data.one.org/data-dives/women-arent-given-power-they-make-it/" target="_blank">
                   Women aren't given power. They make it
@@ -126,24 +164,6 @@
                   </a>
                 </div>
                 <div class="work__project-tools"><span class="fa fa-wrench"></span><span> Python, Flourish, CSS</span></div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 2 Health Financing-->
-          <div class="work__project-contents">
-            <a href = "https://data.one.org/topics/health-financing/" target="_blank">
-              <img loading="lazy" class="work__img" src="/projects/health_financing.gif" alt="GIF scrolling a webpage">
-            </a>
-            <div>
-              <h4 class="work__project-title">
-                <a href="https://data.one.org/topics/health-financing/" target="_blank">
-                  Health Financing
-                </a>
-              </h4>
-              <div class="work__project-description">
-                <p>How much do countries spend on health, where does that money come from, and how is it spent?</p>
-                <div class="work__project-tools"><span class="fa fa-wrench"></span><span> Python, Flourish</span></div>
               </div>
             </div>
           </div>
@@ -172,6 +192,35 @@
             </div>
           </div>
 
+
+
+          <!-- Project 3 imf-reader-->
+          <div class="work__project-contents">
+            <a href="https://pypi.org/project/unesco-reader/" target="_blank">
+              <img loading="lazy" class="work__img" src="/projects/unesco_reader.gif" alt="GIF scrolling a webpage">
+            </a>
+            <div>
+              <h4 class="work__project-title">
+                <a href="https://pypi.org/project/unesco-reader/" target="_blank">
+                  imf-reader
+                </a>
+              </h4>
+              <div class="work__project-description">
+                <p>A Python package to access IMF World Economic Outlook (WEO) data</p>
+                <div>
+                  <a class="work__project-tools" href="https://github.com/lpicci96/unesco_reader" target="_blank">
+                    <span class="fa fa-code"></span>
+                    <span>Access the code</span>
+                  </a>
+                </div>
+                <div class="work__project-tools"><span class="fa fa-wrench"></span><span> Python</span></div>
+              </div>
+            </div>
+          </div>
+
+
+
+
           <!-- Project 4 IPSOS survey Tableau dashboard-->
           <div class="work__project-contents">
             <a href="https://public.tableau.com/views/AddressingVaccineInequitySurvey/AddressingVaccineInequitySurvey?:language=en-US&:display_count=n&:origin=viz_share_link" target="_blank">
@@ -198,12 +247,12 @@
             <div>
               <h4 class="work__project-title">
                 <a href="https://github.com/lpicci96/visualizations" target="_blank">
-                  #TidyTuesday #DuBois and other challenges
+                  A DuBoisian exploration of global poverty
                 </a>
               </h4>
               <div class="work__project-description">
-                <p>My contributions to various Twitter challenges</p>
-                <div class="work__project-tools"><span class="fa fa-wrench"></span><span> R, Python, Tableau</span></div>
+                <p>Showcasing DuBois visualisation styles and explorint trends in global poverty</p>
+                <div class="work__project-tools"><span class="fa fa-wrench"></span><span>D3.js, Observable, CSS</span></div>
               </div>
             </div>
           </div>
@@ -225,7 +274,6 @@
               </div>
             </div>
           </div>
-
         </div>
         
       </section>
@@ -239,18 +287,18 @@
             <img loading="lazy" src="/about-me-blur-crop.png" alt="Photo of Luca smiling">
           </div>
           <div class="about__description">
-            <p>I am passionate about using data to understand complex global issues and to help decision-makers make better decisions.
+            <p>
+              I am passionate about using data and data visualisation help us understand complex global issues and make better decisions.
             </p>
             <p>
-              Currently, I work as a senior data analyst at the 
-              <a href="https://www.one.org/" target="_blank">ONE Campaign</a>, a global advocacy organization. I 
-              build data-driven content and tools to raise awareness about global issues and support our advocacy efforts.
-              <a href="https://data.one.org/" target="_blank">
-                Check out some of our work around these issues.
-              </a>
+
+              At the <a href="https://www.one.org/" target="_blank">ONE Campaign</a> I work on issues ranging from
+              global health to gender equality and climate change. I help develop modern tools like <a href="" target="_blank">DataCommons</a>
+              and various python packages to make international development data more accessible. I make data visualisations 
+              to clearly explain complex, multifaceted and often interelated issues in global development.
             </p>
             <p>
-             I am originally from Sardinia, but I have lived in many places around the world. I am currently based in Paris, France.
+             I am from Sardinia, and currently live in Paris, France.
             </p>
             <p>
               Reach out if you would like to collaborate on a project or chat about my work!

@@ -12,16 +12,21 @@
     margin-right: auto;
     min-width: 25%;
     justify-content: center;
+    
 }
 
 .work__project-contents {
+    
+    padding: 20px;
     margin-bottom: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
 
 }
 
-.work__project-contents:last-child {
+/* .work__project-contents:last-child {
     margin-bottom: 0;
-}
+} */
 
 
 .work__project-description {
