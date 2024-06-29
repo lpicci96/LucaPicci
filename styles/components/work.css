@@ -30,6 +30,12 @@
     font-size: var(--font-size-xs);
 }
 
+.work__project-tools {
+    font-size: var(--font-size-xxs);
+    color: var(--color-stone400);
+    font-weight: normal;
+}
+
 .work__project-title {
     text-align: left;
 }
@@ -43,6 +49,10 @@
 
     .work__project-description {
         font-size: var(--font-size-s);
+    }
+
+    .work__project-tools {
+        font-size: var(--font-size-xs);
     }
 
     .work__project-contents {
@@ -62,6 +72,10 @@
         font-size: var(--font-size-s);
     }
 
+    .work__project-tools {
+        font-size: var(--font-size-xs);
+    }
+
     .work__project-contents {
         margin-bottom: 4rem;
     
@@ -74,14 +88,22 @@
     .work__project-description {
         font-size: var(--font-size-base);
     }
+
+    .work__project-tools {
+        font-size: var(--font-size-xs);
+    }
 }
 
 /* extra large screen above 1201 */
 @media (min-width: 1201px) {
 
     .work__project-description {
-        font-size: var(--font-size-x2);
+        /* font-size: var(--font-size-x2); */
         font-size: var(--font-size-x1);
+    }
+
+    .work__project-tools {
+        font-size: var(--font-size-s);
     }
 }
 
@@ -90,6 +112,10 @@
     
         .work__project-description {
             font-size: var(--font-size-x2);
+        }
+
+        .work__project-tools {
+            font-size: var(--font-size-base);
         }
 }
 
