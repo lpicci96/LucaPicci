@@ -27,3 +27,14 @@
 .hero__social-container {
     margin-top: 1.5rem;
 }
+
+
+.typing-paragraph {
+    /* padding-top: 1rem;
+    padding-bottom: 1rem; */
+}
+
+
+#typing-paragraph__skills {
+    background-color: var(--color-stone200)
+}

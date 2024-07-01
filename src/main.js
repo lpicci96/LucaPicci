@@ -11,5 +11,7 @@ import '../styles/components/about.css';
 import '../styles/components/footer.css';
 
 import mobileNav from './utils/mobile-nav.js';
+import typing from './utils/typing.js';
 
 mobileNav();
+typing();
