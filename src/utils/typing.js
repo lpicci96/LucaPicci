@@ -13,8 +13,7 @@ const typing = () => {
     var speed = 150; /* The speed/duration of the effect in milliseconds */
     var isDeleting = false;
     var deleteSpeed = 70; /* The speed/duration of the delete effect in milliseconds */
-    // var delayBetweenCycles = 1500;
-    var delayAfterTyping = 2000; /* Delay after typing all skills */
+    var delayAfterTyping = 1500; /* Delay after typing all skills */
     var delayAfterDeleting = 500; /* Delay after deleting all skills */
 
     function typeWriter() {
