@@ -64,7 +64,7 @@
         <div>
           <p  class="hero__content">Hi, I'm <strong>Luca</strong>.</p>
           <p  class="hero__content">I'm a senior data analyst at <a>the ONE Campaign</a>.</p>
-          <p  class="hero__content">I build data visualisations, tools, and analyses to understand and tackle the most challenging issues in international development.</p>
+          <p  class="hero__content">I build visualisations, data tools, and analyses to understand and tackle the most challenging issues in global development.</p>
           
           <div class="social__container hero__social-container">
             <a class="fa fa-github social__icon" href="https://github.com/lpicci96" target="_blank" aria-label="GitHub link"></a>
@@ -84,7 +84,11 @@
         </ul>
 
         <h4>Technologies I use</h3>
-        <ul class="skills__technologies-list">
+        <details>
+          <summary>
+            show
+          </summary>
+          <ul class="skills__technologies-list">
             <li class="skills__technology-item">Python</li>
             <li class="skills__technology-item">R</li>
             <li class="skills__technology-item">SQL</li>
@@ -98,7 +102,7 @@
             <li class="skills__technology-item">WordPress</li>
             <li class="skills__technology-item">Git</li>
           </ul>
-        </div>
+        </details>
       </section>
 
       <!-- My Work section -->
@@ -114,7 +118,7 @@
             </a>
             <div>
               <h4 class="work__project-title">
-                <a href="https://data.one.org/topics/health-financing/" target="_blank">
+                <a href="https://data.one.org/data-dives/manufacturing/" target="_blank">
                   Vaccine Manufacturing
                 </a>
               </h4>
@@ -125,34 +129,53 @@
             </div>
           </div>
 
-          <!-- Health Financing-->
+
+          <!--  DuBois DuBois poverty -->
           <div class="work__project-contents">
-            <a href = "https://data.one.org/topics/health-financing/" target="_blank">
-              <img loading="lazy" src="/projects/health_financing.gif" alt="GIF scrolling a webpage">
+            <a href="https://observablehq.com/d/38bd95681cf4c0df" target="_blank">
+              <img loading="lazy" src="/projects/observable.png" alt="Screenshot of a Du Bois bar chart recreation">
             </a>
             <div>
               <h4 class="work__project-title">
-                <a href="https://data.one.org/topics/health-financing/" target="_blank">
-                  Health Financing
+                <a href="https://observablehq.com/d/38bd95681cf4c0df" target="_blank">
+                  A DuBoisian exploration of global poverty
                 </a>
               </h4>
               <div class="work__project-description">
-                <p>How much do countries spend on health, where does that money come from, and how is it spent?</p>
-                <div class="work__project-tools"><span class="fa fa-wrench"></span><span> Python, Flourish</span></div>
+                <p>Showcasing DuBois visualisation styles and explorint trends in global poverty</p>
+                <div class="work__project-tools"><span class="fa fa-wrench"></span><span> D3.js, Observable, CSS</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Climate Finance-->
+          <div class="work__project-contents">
+            <a href = "https://datacommons.one.org/climate-finance-files" target="_blank">
+              <img loading="lazy" src="/projects/image.png" alt="Image of the landing page for the project">
+            </a>
+            <div>
+              <h4 class="work__project-title">
+                <a href="https://datacommons.one.org/climate-finance-files" target="_blank">
+                  Climate Finance
+                </a>
+              </h4>
+              <div class="work__project-description">
+                <p>How much is really being spent to address climate change and why are reporting methodologies an issue?</p>
+                <div class="work__project-tools"><span class="fa fa-wrench"></span><span> Python</span></div>
               </div>
             </div>
           </div>
 
 
-          <!-- Project 1 Gender DataDive -->
+          <!-- Gender DataDive -->
           <div class="work__project-contents">
             <a href="https://data.one.org/data-dives/women-arent-given-power-they-make-it/" target="_blank">
-              <img loading="lazy" src="/projects/genderViz.png" alt="GIF scrolling a webpage">
+              <img loading="lazy" src="/projects/genderViz.png" alt="Beeswarm chart showing gender inequality for countries">
             </a>
             <div>
               <h4 class="work__project-title">
                 <a href="https://data.one.org/data-dives/women-arent-given-power-they-make-it/" target="_blank">
-                  Women aren't given power. They make it
+                  Gender and Development
                 </a>
               </h4>
               <div class="work__project-description">
@@ -168,10 +191,10 @@
             </div>
           </div>
 
-          <!-- Project 3 unesco-reader-->
+          <!-- unesco-reader-->
           <div class="work__project-contents">
             <a href="https://pypi.org/project/unesco-reader/" target="_blank">
-              <img loading="lazy" class="work__img" src="/projects/unesco_reader.gif" alt="GIF scrolling a webpage">
+              <img loading="lazy" class="work__img" src="/projects/unesco.png" alt="screenshot of the python package documentation">
             </a>
             <div>
               <h4 class="work__project-title">
@@ -194,21 +217,21 @@
 
 
 
-          <!-- Project 3 imf-reader-->
+          <!-- imf-reader-->
           <div class="work__project-contents">
-            <a href="https://pypi.org/project/unesco-reader/" target="_blank">
-              <img loading="lazy" class="work__img" src="/projects/unesco_reader.gif" alt="GIF scrolling a webpage">
+            <a href="https://pypi.org/project/imf-reader/" target="_blank">
+              <img loading="lazy" class="work__img" src="/projects/imf-reader.png" alt="GIF scrolling a webpage">
             </a>
             <div>
               <h4 class="work__project-title">
-                <a href="https://pypi.org/project/unesco-reader/" target="_blank">
+                <a href="https://pypi.org/project/imf-reader/" target="_blank">
                   imf-reader
                 </a>
               </h4>
               <div class="work__project-description">
                 <p>A Python package to access IMF World Economic Outlook (WEO) data</p>
                 <div>
-                  <a class="work__project-tools" href="https://github.com/lpicci96/unesco_reader" target="_blank">
+                  <a class="work__project-tools" href="https://github.com/ONEcampaign/imf-reader" target="_blank">
                     <span class="fa fa-code"></span>
                     <span>Access the code</span>
                   </a>
@@ -235,24 +258,6 @@
               <div class="work__project-description">
                 <p>Dashboard for the ONE Campaign using IPSOS data</p>
                 <div class="work__project-tools"><span class="fa fa-wrench"></span><span> Python, Tableau</span></div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 4 DuBois TidyTuesday and others -->
-          <div class="work__project-contents">
-            <a href="https://github.com/lpicci96/visualizations" target="_blank">
-              <img loading="lazy" src="/projects/tidyTuesday.png" alt="Screenshot of a Du Bois bar chart recreation">
-            </a>
-            <div>
-              <h4 class="work__project-title">
-                <a href="https://github.com/lpicci96/visualizations" target="_blank">
-                  A DuBoisian exploration of global poverty
-                </a>
-              </h4>
-              <div class="work__project-description">
-                <p>Showcasing DuBois visualisation styles and explorint trends in global poverty</p>
-                <div class="work__project-tools"><span class="fa fa-wrench"></span><span>D3.js, Observable, CSS</span></div>
               </div>
             </div>
           </div>
@@ -298,7 +303,7 @@
               to clearly explain complex, multifaceted and often interelated issues in global development.
             </p>
             <p>
-             I am from Sardinia, and currently live in Paris, France.
+             I am from Sardinia, and currently live in Paris.
             </p>
             <p>
               Reach out if you would like to collaborate on a project or chat about my work!
