@@ -7,7 +7,7 @@
     <!-- Font family -->
     <link href="https://api.fontshare.com/v2/css?f[]=ranade@700,300,400,500&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/022d96bb69.js" crossorigin="anonymous"></script>
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,8 +16,8 @@
     <meta name="keywords" content="Luca Picci, Luca, Picci, data, international development, data visualization, Python" />
 
 
-    <script type="module" crossorigin src="/LucaPicci/assets/index-c870a981.js"></script>
-    <link rel="stylesheet" href="/LucaPicci/assets/index-04d3810a.css">
+    <script type="module" crossorigin src="/LucaPicci/assets/index-40ce19fc.js"></script>
+    <link rel="stylesheet" href="/LucaPicci/assets/index-901e6229.css">
   </head>
   <body>
 
@@ -29,9 +29,9 @@
       <div class="header__menu">
         <nav>
           <ul class="header__menu-list">
-            <li><a class="header__menu-link" href="#what-i-do">What I do</a></li>
             <li><a class="header__menu-link" href="#my-work">My work</a></li>
             <li><a class="header__menu-link" href="#about-me">About me</a></li>
+            <li><a class="header__menu-link" href="/public/cv/resume.pdf" target="_blank">C.V</a></li>
           </ul>
 
           <!-- bar button for mobile -->
@@ -49,9 +49,9 @@
     <div class="mobile-nav">
       <nav>
         <ul class="mobile-nav__menu">
-          <li><a class="mobile-nav__menu-link" href="#what-i-do">What I do</a></li>
           <li><a class="mobile-nav__menu-link" href="#my-work">My work</a></li>
           <li><a class="mobile-nav__menu-link" href="#about-me">About me</a></li>
+          <li><a class="mobile-nav__menu-link" href="/public/cv/resume.pdf" target="_blank">C.V</a></li>
         </ul>
       </nav>
 
@@ -65,95 +65,111 @@
         <img class="hero__headshot" src="/LucaPicci/headshot.jpg" alt="headshot portfolio picture of Luca">
         <div>
           <p  class="hero__content">Hi, I'm <strong>Luca</strong>.</p>
-          <p  class="hero__content">I'm a senior data analyst at <a>the ONE Campaign</a>.</p>
-          <p  class="hero__content">I build data visualizations, tools, and analyses to understand and tackle the most challenging issues in international development.</p>
+          <p class="hero__content">I do <span id="typing-paragraph__skills"></span></p>
+          <p  class="hero__content">I'm a senior data analyst at <a>the ONE Campaign</a>.
+            <br>
+          I build visualisations, data tools, and analyses to understand and tackle the most challenging issues in global development.</p>
           
+          
+
           <div class="social__container hero__social-container">
             <a class="fa fa-github social__icon" href="https://github.com/lpicci96" target="_blank" aria-label="GitHub link"></a>
-            <a class="fa fa-twitter social__icon" href="https://twitter.com/lpicci96" target="_blank" aria-label="Twitter link"></a>
+            <a class="fa-brands fa-x-twitter social__icon" href="https://twitter.com/lpicci96" target="_blank" aria-label="Twitter X link"></a>
             <a class="fa fa-linkedin social__icon" href="https://www.linkedin.com/in/luca-picci-589735b3/" target="_blank" aria-label="LinkedIn link"></a>
             <a class="fa fa-envelope social__icon" href="mailto:lpicci96@gmail.com" target="_blank" aria-label="Email link"></a>
           </div>
       </section>
 
-      <!-- What I do -->
-      <section class="skills container">
-        <h3 id="what-i-do">What I do</h3>
-        <ul class="skills__list">
-          <li class="skills-item">Data Analysis and Visualization</li>
-          <li class="skills-item">Python Development</li>
-          <li class="skills-item">Economic and Policy Research</li>
-        </ul>
-
-        <h4>Technologies I use</h3>
-        <ul class="skills__technologies-list">
-            <li class="skills__technology-item">Python</li>
-            <li class="skills__technology-item">R</li>
-            <li class="skills__technology-item">SQL</li>
-            <li class="skills__technology-item">JavaScript</li>
-            <li class="skills__technology-item">HTML</li>
-            <li class="skills__technology-item">CSS</li>
-            <li class="skills__technology-item">MongoDB</li>
-            <li class="skills__technology-item">Stata</li>
-            <li class="skills__technology-item">Flourish</li>
-            <li class="skills__technology-item">Tableau</li>
-            <li class="skills__technology-item">WordPress</li>
-            <li class="skills__technology-item">Git</li>
-          </ul>
-        </div>
-      </section>
-
       <!-- My Work section -->
       <section class="container">
-        <h3 class="work__title" id="my-work">Explore some of my work</h3>
+        <h3 class="work__title" id="my-work">Explore my recent work and projects</h3>
 
-        <!-- Project 1 Gender DataDive -->
         <div class="work__container">
-          <div>
-            <a href="https://data.one.org/data-dives/women-arent-given-power-they-make-it/" target="_blank">
-              <img loading="lazy" src="/LucaPicci/projects/gender.gif" alt="GIF scrolling a webpage">
+
+        <!-- Project Vaccine Manufacturing-->
+          <div class="work__project-contents">
+            <a href = "https://data.one.org/topics/health-financing/" target="_blank">
+              <img loading="lazy" src="/LucaPicci/projects/vaccines.png" alt="GIF scrolling a webpage">
             </a>
-            <div class="work__project-contents">
+            <div>
+              <h4 class="work__project-title">
+                <a href="https://data.one.org/data-dives/manufacturing/" target="_blank">
+                  Vaccine Manufacturing
+                </a>
+              </h4>
+              <div class="work__project-description">
+                <p>Why it is essential for Africa to build its vaccine manufacturing capacity and reach vaccine sovereignty.</p>
+                <div class="work__project-tools"><span class="fa fa-wrench"></span><span> Python, Flourish, D3.js</span></div>
+              </div>
+            </div>
+          </div>
+
+
+          <!--  DuBois DuBois poverty -->
+          <div class="work__project-contents">
+            <a href="https://observablehq.com/d/38bd95681cf4c0df" target="_blank">
+              <img loading="lazy" src="/LucaPicci/projects/observable.png" alt="Screenshot of a Du Bois bar chart recreation">
+            </a>
+            <div>
+              <h4 class="work__project-title">
+                <a href="https://observablehq.com/d/38bd95681cf4c0df" target="_blank">
+                  A DuBoisian exploration of global poverty
+                </a>
+              </h4>
+              <div class="work__project-description">
+                <p>Showcasing DuBois visualisation styles and explorint trends in global poverty</p>
+                <div class="work__project-tools"><span class="fa fa-wrench"></span><span> D3.js, Vanilla JS, Observable Plot, CSS</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Climate Finance-->
+          <div class="work__project-contents">
+            <a href = "https://datacommons.one.org/climate-finance-files" target="_blank">
+              <img loading="lazy" src="/LucaPicci/projects/image.png" alt="Image of the landing page for the project">
+            </a>
+            <div>
+              <h4 class="work__project-title">
+                <a href="https://datacommons.one.org/climate-finance-files" target="_blank">
+                  Climate Finance
+                </a>
+              </h4>
+              <div class="work__project-description">
+                <p>How much is really being spent to address climate change and why are reporting methodologies an issue?</p>
+                <div class="work__project-tools"><span class="fa fa-wrench"></span><span> Python</span></div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Gender DataDive -->
+          <div class="work__project-contents">
+            <a href="https://data.one.org/data-dives/women-arent-given-power-they-make-it/" target="_blank">
+              <img loading="lazy" src="/LucaPicci/projects/genderViz.png" alt="Beeswarm chart showing gender inequality for countries">
+            </a>
+            <div>
               <h4 class="work__project-title">
                 <a href="https://data.one.org/data-dives/women-arent-given-power-they-make-it/" target="_blank">
-                  Women aren't given power. They make it
+                  Gender and Development
                 </a>
               </h4>
               <div class="work__project-description">
                 <p>How gender inequality is preventing progress in human development</p>
-                <a class="fa fa-code" href="https://github.com/ONEcampaign/DataDive_Gender" target="_blank"> 
-                  Access the respository
-                </a>
-                <div class="fa fa-wrench"> Python, Flourish, CSS, Wordpress</div>
+                <div>
+                  <a class="work__project-tools" href="https://github.com/ONEcampaign/DataDive_Gender" target="_blank">
+                    <span class="fa fa-code"></span> 
+                    <span> Access the respository</span>
+                  </a>
+                </div>
+                <div class="work__project-tools"><span class="fa fa-wrench"></span><span> Python, Flourish, CSS</span></div>
               </div>
             </div>
           </div>
 
-          <!-- Project 2 Health Financing-->
-          <div class="work__project-contents">
-            <a href = "https://data.one.org/topics/health-financing/" target="_blank">
-              <img loading="lazy" class="work__img" src="/LucaPicci/projects/health_financing.gif" alt="GIF scrolling a webpage">
-            </a>
-            <div>
-              <h4 class="work__project-title">
-                <a href="https://data.one.org/topics/health-financing/" target="_blank">
-                  Health Financing
-                </a>
-              </h4>
-              <div class="work__project-description">
-                <p>How much do countries spend on health, where does that money come from, and how is it spent?</p>
-                <a class="fa fa-code" href="https://github.com/ONEcampaign/topic_health_financing" target="_blank"> 
-                  Access the repository
-                </a>
-                <div class="fa fa-wrench"> Python, Flourish</div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 3 unesco-reader-->
+          <!-- unesco-reader-->
           <div class="work__project-contents">
             <a href="https://pypi.org/project/unesco-reader/" target="_blank">
-              <img loading="lazy" class="work__img" src="/LucaPicci/projects/unesco_reader.gif" alt="GIF scrolling a webpage">
+              <img loading="lazy" class="work__img" src="/LucaPicci/projects/unesco.png" alt="screenshot of the python package documentation">
             </a>
             <div>
               <h4 class="work__project-title">
@@ -163,13 +179,45 @@
               </h4>
               <div class="work__project-description">
                 <p>A Python package to access UNESCO data</p>
-                <a class="fa fa-code" href="https://github.com/lpicci96/unesco_reader" target="_blank"> 
-                  Access the code
-                </a>
-                <div class="fa fa-wrench"> Python</div>
+                <div>
+                  <a class="work__project-tools" href="https://github.com/lpicci96/unesco_reader" target="_blank">
+                    <span class="fa fa-code"></span>
+                    <span>Access the code</span>
+                  </a>
+                </div>
+                <div class="work__project-tools"><span class="fa fa-wrench"></span><span> Python</span></div>
               </div>
             </div>
           </div>
+
+
+
+          <!-- imf-reader-->
+          <div class="work__project-contents">
+            <a href="https://pypi.org/project/imf-reader/" target="_blank">
+              <img loading="lazy" class="work__img" src="/LucaPicci/projects/imf-reader.png" alt="GIF scrolling a webpage">
+            </a>
+            <div>
+              <h4 class="work__project-title">
+                <a href="https://pypi.org/project/imf-reader/" target="_blank">
+                  imf-reader
+                </a>
+              </h4>
+              <div class="work__project-description">
+                <p>A Python package to access IMF World Economic Outlook (WEO) data</p>
+                <div>
+                  <a class="work__project-tools" href="https://github.com/ONEcampaign/imf-reader" target="_blank">
+                    <span class="fa fa-code"></span>
+                    <span>Access the code</span>
+                  </a>
+                </div>
+                <div class="work__project-tools"><span class="fa fa-wrench"></span><span> Python</span></div>
+              </div>
+            </div>
+          </div>
+
+
+
 
           <!-- Project 4 IPSOS survey Tableau dashboard-->
           <div class="work__project-contents">
@@ -184,25 +232,7 @@
               </h4>
               <div class="work__project-description">
                 <p>Dashboard for the ONE Campaign using IPSOS data</p>
-                <div class="fa fa-wrench"> Python, Tableau</div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 4 DuBois TidyTuesday and others -->
-          <div class="work__project-contents">
-            <a href="https://github.com/lpicci96/visualizations" target="_blank">
-              <img loading="lazy" src="/LucaPicci/projects/tidyTuesday.png" alt="Screenshot of a Du Bois bar chart recreation">
-            </a>
-            <div>
-              <h4 class="work__project-title">
-                <a href="https://github.com/lpicci96/visualizations" target="_blank">
-                  #TidyTuesday #DuBois and other challenges
-                </a>
-              </h4>
-              <div class="work__project-description">
-                <p>My contributions to various Twitter challenges</p>
-                <div class="fa fa-wrench"> R, Python, Tableau</div>
+                <div class="work__project-tools"><span class="fa fa-wrench"></span><span> Python, Tableau</span></div>
               </div>
             </div>
           </div>
@@ -220,11 +250,10 @@
               </h4>
               <div class="work__project-description">
                 <p>Contribution to Gina Reynold's FlipbookR package</p>
-                <div class="fa fa-wrench"> R</div>
+                <div class="work__project-tools"><span class="fa fa-wrench"></span><span> R</span></div>
               </div>
             </div>
           </div>
-
         </div>
         
       </section>
@@ -238,18 +267,18 @@
             <img loading="lazy" src="/LucaPicci/about-me-blur-crop.png" alt="Photo of Luca smiling">
           </div>
           <div class="about__description">
-            <p>I am passionate about using data to understand complex global issues and to help decision-makers make better decisions.
+            <p>
+              I am passionate about using data and data visualisation help us understand complex global issues and make better decisions.
             </p>
             <p>
-              Currently, I work as a senior data analyst at the 
-              <a href="https://www.one.org/" target="_blank">ONE Campaign</a>, a global advocacy organization. I 
-              build data-driven content and tools to raise awareness about global issues and support our advocacy efforts.
-              <a href="https://data.one.org/" target="_blank">
-                Check out some of our work around these issues.
-              </a>
+
+              At the <a href="https://www.one.org/" target="_blank">ONE Campaign</a> I work on issues ranging from
+              global health to gender equality and climate change. I help develop modern tools like <a href="" target="_blank">DataCommons</a>
+              and various python packages to make international development data more accessible. I make data visualisations 
+              to clearly explain complex, multifaceted and often interelated issues in global development.
             </p>
             <p>
-             I am originally from Sardinia, but I have lived in many places around the world. I am currently based in Paris, France.
+             I am from Sardinia, and currently live in Paris.
             </p>
             <p>
               Reach out if you would like to collaborate on a project or chat about my work!
@@ -268,10 +297,10 @@
     <!-- Footer -->
     <footer class="footer container">
       <div class="footer__container">
-        <span class="footer__text">Copyright © Luca Picci 2023</span>
+        <span class="footer__text">Copyright © Luca Picci 2024</span>
         <div class="social__container">
           <a class="fa fa-github social__icon footer__social-icon" href="https://github.com/lpicci96" target="_blank" aria-label="GitHub link"></a>
-          <a class="fa fa-twitter social__icon footer__social-icon" href="https://twitter.com/lpicci96" target="_blank" aria-label="Twitter link"></a>
+          <a class="fa-brands fa-x-twitter social__icon footer__social-icon" href="https://twitter.com/lpicci96" target="_blank" aria-label="Twitter X link"></a>
           <a class="fa fa-linkedin social__icon footer__social-icon" href="https://www.linkedin.com/in/luca-picci-589735b3/" target="_blank" aria-label="LinkedIn link"></a>
           <a class="fa fa-envelope social__icon footer__social-icon" href="mailto:lpicci96@gmail.com" target="_blank" aria-label="Email link"></a>
         </div>
