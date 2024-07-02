@@ -1,19 +1,51 @@
 .hero {
-    margin-top: 4rem;
-    margin-bottom: 2rem;
+    /* margin-top: 4rem; */
+    /* margin-bottom: 2rem; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1rem;
     text-align: center;
+    height: 100vh;
+}
+
+.down-chevron {
+    margin-top: 2rem;
+    animation: bounce 2s;
+
+}
+
+
+.bounce {
+    animation: bounce 0.5s ease-in-out;
+    animation-delay: 5s;
+    animation-iteration-count: 2;
+}
+
+.bounce:hover {
+    transform: translateY(-2px);
+}
+
+@keyframes bounce {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+
 }
 
 
 .hero__headshot {
     border-radius: 50%;
-    width: 10rem;
-    height: 10rem;
+    width: 5rem;
+    height: 5rem;
+    display:inline
 }
 
 
@@ -32,3 +64,50 @@
 #typing-paragraph__skills {
     background-color: var(--color-stone200)
 }
+
+
+
+
+/* mobile above 320 */
+/* @media (min-width: 320px){} */
+
+/* tablet above 481*/
+@media (min-width: 481px) {
+}
+
+/* laptop and small screen above 769 */
+/* @media (min-width: 769px) {} */
+
+/* large screen and desktop above 1025 */
+@media (min-width: 1025px) {
+    .hero {
+        max-width: 850px;
+        text-align: left;
+    }
+
+    .hero__nameBlock {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        text-align: left;
+        gap: 4rem;
+        margin-left: 5rem;
+    }
+
+    .hero__content-description {
+        padding-top: 1rem;
+
+    }
+
+    .hero__headshot {
+        width: 10rem;
+        height: 10rem;
+    }
+}
+
+/* extra large screen above 1201 */
+/* @media (min-width: 1201px) {} */
+
+/* Extra Extra large */
+/* @media (min-width: 1281px) {} */
