@@ -62,7 +62,9 @@
 
 
 #typing-paragraph__skills {
-    background-color: var(--color-stone200)
+    background-color: var(--color-stone200);
+    padding: 0 0.2rem;
+    margin-left: 0.3rem;
 }
 
 
