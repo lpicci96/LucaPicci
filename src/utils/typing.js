@@ -3,9 +3,9 @@ const typing = () => {
     const paragraph = document.getElementById('typing-paragraph__skills');
 
     let skills = [
-        "data analysis",
-        "data visualisation",
-        "policy research"
+        "messy data useful",
+        "complex issues clearer",
+        "global data actionable"
     ];
 
     var i = 0;

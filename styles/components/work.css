@@ -46,6 +46,35 @@
 }
 
 
+/* Match the size of your existing project image */
+.work__img-grid {
+  width: 100%;
+  /* max-width: 280px;       */
+  /* aspect-ratio: 4 / 3;    */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  /* gap: 4px; */
+}
+
+/* Make links fill grid cells */
+.work__img-grid a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Make images fill links */
+.work__img-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+  display: block;
+  /* border-radius: 4px; */
+}
+
+
+
 /* mobile above 320 */
 /* @media (min-width: 320px){} */
 
