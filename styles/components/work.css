@@ -16,11 +16,14 @@
 }
 
 .work__project-contents {
-    
+
     padding: 20px;
     margin-bottom: 1.5rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
 }
 
@@ -71,6 +74,13 @@
   object-fit: scale-down;
   display: block;
   /* border-radius: 4px; */
+}
+
+.work__project-contents video.work__img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
 }
 
 
