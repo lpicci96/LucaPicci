@@ -9,8 +9,8 @@ import { defineConfig, devices } from '@playwright/test';
  * on other sites; they run only with EXTERNAL=1.
  */
 const remote = Boolean(process.env.BASE_URL);
-const baseURL = process.env.BASE_URL ?? 'http://localhost:4329'; // not 4321, so `npm run dev` is never mistaken for the build
-const skip = [remote && '@local', process.env.EXTERNAL !== '1' && '@external'].filter(Boolean).join('|');
+const baseURL = process.env.BASE_URL || 'http://localhost:4329'; // not 4321, so `npm run dev` is never mistaken for the build
+const skip = [remote && '@local', !['1', 'true'].includes(process.env.EXTERNAL ?? '') && '@external'].filter(Boolean).join('|');
 const skipPattern = skip ? new RegExp(skip) : undefined;
 
 export default defineConfig({

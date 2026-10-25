@@ -8,24 +8,25 @@ for (const { lang, path } of pages) {
       await page.setViewportSize({ width, height: width === 390 ? 844 : 900 });
       await page.goto(path);
       const phrases: string[] = JSON.parse((await page.locator('.typed').getAttribute('data-phrases'))!);
+      await page.evaluate(() => document.fonts.ready);
       // sample the heading's size, the paragraph's position and the typed text every 100ms for 25s
-      const { heights, texts } = await page.evaluate(
+      const { layouts, texts } = await page.evaluate(
         () =>
-          new Promise<{ heights: string[]; texts: string[] }>((resolve) => {
+          new Promise<{ layouts: string[]; texts: string[] }>((resolve) => {
             const h1 = document.querySelector('.intro h1')!;
             const paragraph = document.querySelector('.intro > p')!;
             const typed = document.querySelector('.typed')!;
-            const heights: string[] = [];
+            const layouts: string[] = [];
             const texts: string[] = [];
             const id = setInterval(() => {
               const box = h1.getBoundingClientRect();
-              heights.push(`${box.width}x${box.height} ${paragraph.getBoundingClientRect().top}`);
+              layouts.push(`${box.width}x${box.height} ${paragraph.getBoundingClientRect().top}`);
               texts.push(typed.textContent!);
             }, 100);
-            setTimeout(() => (clearInterval(id), resolve({ heights, texts })), 25_000);
+            setTimeout(() => (clearInterval(id), resolve({ layouts, texts })), 25_000);
           }),
       );
-      expect(new Set(heights).size).toBe(1);
+      expect(new Set(layouts).size).toBe(1);
       for (const phrase of phrases) expect(texts).toContain(phrase);
     });
   }

@@ -105,7 +105,6 @@ nav { display: flex; gap: 28px; font-size: 0.9375rem; color: var(--ink-2); }
 .group p { margin: 0 0 18px; color: var(--ink-2); font-size: 1.0625rem; }
 .group ol { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--rule); }
 .group li { border-bottom: 1px solid var(--rule); padding: 10px 0; font-size: 0.9375rem; }
-.group li.hl a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
 
 /* about */
 .about { display: grid; grid-template-columns: 4fr 8fr; gap: 64px; padding: 16px 0 96px; }
@@ -139,6 +138,7 @@ footer { border-top: 1px solid var(--rule); padding: 28px 0 40px; display: flex;
   .card.large:hover { transform: scale(1.012); }
   .group .tiles a:hover { transform: scale(1.04); }
   .group .tiles:hover a:not(:hover) img { opacity: .45; }
+  .group li.hl a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
   .contact .email:hover { border-color: var(--accent); }
 }
 a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
