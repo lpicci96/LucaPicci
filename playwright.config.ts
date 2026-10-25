@@ -28,11 +28,19 @@ export default defineConfig({
     {
       name: 'chrome',
       use: { ...devices['Desktop Chrome'], channel: 'chrome' },
-      grep: /@chrome|@external/,
+      grep: /@chrome/,
+      grepInvert: skipPattern,
+    },
+    {
+      // plain Chrome, announcing itself as headless: sites with bot checks fail and get opened by hand
+      name: 'external',
+      use: { channel: 'chrome' },
+      grep: /@external/,
       grepInvert: skipPattern,
     },
   ],
   webServer: remote
     ? undefined
-    : { command: 'npm run preview -- --port 4321', url: baseURL, reuseExistingServer: true },
+    : // --ignore-lock keeps the server in the foreground (Astro backgrounds it when it detects an agent)
+      { command: 'npm run preview -- --port 4321 --ignore-lock', url: baseURL, reuseExistingServer: true },
 });

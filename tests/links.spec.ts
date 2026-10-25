@@ -8,6 +8,9 @@ const hrefs = [...new Set([...source.matchAll(/href: '([^']+)'/g)].map((m) => m[
 for (const href of hrefs) {
   test(`${href} opens`, { tag: '@external' }, async ({ page }) => {
     const response = await page.goto(href, { waitUntil: 'domcontentloaded', timeout: 30_000 });
+    await page.waitForTimeout(2000);
     expect(response?.status()).toBeLessThan(300);
+    // bot checks can answer 200 too; those links need opening by hand
+    expect(await page.title()).not.toMatch(/Just a moment|Oh noes|Security Checkpoint|Access denied/i);
   });
 }
