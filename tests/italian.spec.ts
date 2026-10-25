@@ -17,6 +17,23 @@ test('no sentence is the same in English and Italian', async ({ page }) => {
   expect(italian.filter((s) => english.has(s))).toEqual([]);
 });
 
+test('the metadata and console note are translated', async ({ page }) => {
+  const strings = async (path: string) => {
+    await page.goto(path);
+    return {
+      description: await page.locator('meta[name="description"]').getAttribute('content'),
+      ogDescription: await page.locator('meta[property="og:description"]').getAttribute('content'),
+      note: await page.locator('header').getAttribute('data-note'),
+    };
+  };
+  const english = await strings('/');
+  const italian = await strings('/it/');
+  for (const key of Object.keys(english) as (keyof typeof english)[]) {
+    expect(italian[key], key).toBeTruthy();
+    expect(italian[key], key).not.toBe(english[key]);
+  }
+});
+
 test('each Italian typed phrase fits on one line at phone width', async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto('/it/');

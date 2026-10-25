@@ -1,8 +1,9 @@
 // Types each phrase, holds it, deletes it, then moves on. Static first phrase with reduced motion.
 const el = document.querySelector<HTMLElement>('.typed');
 
-if (el && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
-  const phrases: string[] = JSON.parse(el.dataset.phrases ?? '[]');
+const phrases: string[] = JSON.parse(el?.dataset.phrases ?? '[]');
+
+if (el && phrases.length && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
   let p = 0;
   let n = phrases[0].length;
   let deleting = false;

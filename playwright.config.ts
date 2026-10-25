@@ -9,8 +9,8 @@ import { defineConfig, devices } from '@playwright/test';
  * on other sites; they run only with EXTERNAL=1.
  */
 const remote = Boolean(process.env.BASE_URL);
-const baseURL = process.env.BASE_URL ?? 'http://localhost:4321';
-const skip = [remote && '@local', !process.env.EXTERNAL && '@external'].filter(Boolean).join('|');
+const baseURL = process.env.BASE_URL ?? 'http://localhost:4329'; // not 4321, so `npm run dev` is never mistaken for the build
+const skip = [remote && '@local', process.env.EXTERNAL !== '1' && '@external'].filter(Boolean).join('|');
 const skipPattern = skip ? new RegExp(skip) : undefined;
 
 export default defineConfig({
@@ -42,5 +42,5 @@ export default defineConfig({
   webServer: remote
     ? undefined
     : // --ignore-lock keeps the server in the foreground (Astro backgrounds it when it detects an agent)
-      { command: 'npm run preview -- --port 4321 --ignore-lock', url: baseURL, reuseExistingServer: true },
+      { command: 'npm run preview -- --port 4329 --ignore-lock', url: baseURL, reuseExistingServer: true },
 });

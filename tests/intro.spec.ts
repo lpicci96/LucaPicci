@@ -8,16 +8,18 @@ for (const { lang, path } of pages) {
       await page.setViewportSize({ width, height: width === 390 ? 844 : 900 });
       await page.goto(path);
       const phrases: string[] = JSON.parse((await page.locator('.typed').getAttribute('data-phrases'))!);
-      // sample the intro's height and the typed text every 100ms for 25s
+      // sample the heading's size, the paragraph's position and the typed text every 100ms for 25s
       const { heights, texts } = await page.evaluate(
         () =>
-          new Promise<{ heights: number[]; texts: string[] }>((resolve) => {
-            const intro = document.querySelector('.intro')!;
+          new Promise<{ heights: string[]; texts: string[] }>((resolve) => {
+            const h1 = document.querySelector('.intro h1')!;
+            const paragraph = document.querySelector('.intro > p')!;
             const typed = document.querySelector('.typed')!;
-            const heights: number[] = [];
+            const heights: string[] = [];
             const texts: string[] = [];
             const id = setInterval(() => {
-              heights.push(intro.getBoundingClientRect().height);
+              const box = h1.getBoundingClientRect();
+              heights.push(`${box.width}x${box.height} ${paragraph.getBoundingClientRect().top}`);
               texts.push(typed.textContent!);
             }, 100);
             setTimeout(() => (clearInterval(id), resolve({ heights, texts })), 25_000);

@@ -1,7 +1,7 @@
 import type { Row } from './types';
 
 import dfoPoster from '../assets/projects/dfo-poster.jpg';
-import todo from '../assets/projects/todo.png';
+import dfoOntology from '../assets/projects/dfo-ontology.png';
 import nowcastingCover from '../assets/projects/nowcasting-cover.png';
 import dataVizGuidelines from '../assets/projects/data-viz-guidelines.png';
 import voronoiTreemap from '../assets/projects/voronoi-treemap.jpg';
@@ -52,7 +52,7 @@ export const rows: Row[] = [
           it: 'Un modello condiviso della finanza per lo sviluppo, che rende confrontabili le cifre pubblicate da enti diversi.',
         },
         tools: { en: 'Wikibase · SPARQL · Python', it: 'Wikibase · SPARQL · Python' },
-        media: { kind: 'image', src: todo, fit: 'cover' },
+        media: { kind: 'image', src: dfoOntology, fit: 'cover' },
       },
       {
         id: 'voronoi-treemap',

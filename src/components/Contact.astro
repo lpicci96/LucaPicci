@@ -15,8 +15,8 @@ const t = copy[Astro.props.lang];
   <div class="contact">
     <a class="email" href={`mailto:${email}`}>{email}</a>
     <div class="links">
-      <a href={github} {...newTab}>{t.labels.github} ↗</a>
-      <a href={linkedin} {...newTab}>{t.labels.linkedin} ↗</a>
+      <a href={github} {...newTab}>{t.labels.github} <span aria-hidden="true">↗</span></a>
+      <a href={linkedin} {...newTab}>{t.labels.linkedin} <span aria-hidden="true">↗</span></a>
     </div>
   </div>
 </section>
