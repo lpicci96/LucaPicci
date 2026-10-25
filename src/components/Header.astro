@@ -1,0 +1,38 @@
+---
+import { copy, homePath } from '../i18n';
+import { langs, type Lang } from '../i18n/types';
+import { email } from '../data/contact';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = copy[lang];
+---
+
+<header data-note={t.consoleNote} data-email={email}>
+  <span class="name">Luca Picci</span>
+  <nav>
+    <a href="#projects">{t.sections.projects}</a>
+    <a href="#about">{t.sections.about}</a>
+    <a href="#contact">{t.sections.contact}</a>
+  </nav>
+  <div class="lang">
+    {
+      langs.map((l, i) => (
+        <>
+          {i > 0 && <span aria-hidden="true"> · </span>}
+          <a href={homePath[l]} lang={l} hreflang={l} aria-current={l === lang ? 'page' : undefined}>
+            {l.toUpperCase()}
+          </a>
+        </>
+      ))
+    }
+  </div>
+</header>
+
+<script>
+  import '../scripts/dot-name';
+  import '../scripts/console-note';
+</script>

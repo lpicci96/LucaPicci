@@ -1,0 +1,17 @@
+---
+import Meta from './Meta.astro';
+import type { Lang } from '../i18n/types';
+import type { Project } from '../data/types';
+
+interface Props {
+  project: Project;
+  lang: Lang;
+}
+
+const { project, lang } = Astro.props;
+---
+
+<Meta builtFor={project.builtFor} time={project.time} lang={lang} />
+<h3>{project.title}{project.link.type === 'external' && <span class="out" aria-hidden="true">↗</span>}</h3>
+<p>{project.description[lang]}</p>
+<div class="tools">{project.tools[lang]}</div>

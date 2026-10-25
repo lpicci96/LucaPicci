@@ -1,0 +1,22 @@
+---
+import { copy } from '../i18n';
+import type { Lang } from '../i18n/types';
+import { email, github, linkedin, newTab } from '../data/contact';
+
+interface Props {
+  lang: Lang;
+}
+
+const t = copy[Astro.props.lang];
+---
+
+<section>
+  <h2 class="label" id="contact">{t.sections.contact}</h2>
+  <div class="contact">
+    <a class="email" href={`mailto:${email}`}>{email}</a>
+    <div class="links">
+      <a href={github} {...newTab}>{t.labels.github} ↗</a>
+      <a href={linkedin} {...newTab}>{t.labels.linkedin} ↗</a>
+    </div>
+  </div>
+</section>

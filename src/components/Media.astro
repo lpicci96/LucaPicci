@@ -1,0 +1,27 @@
+---
+import { Image, getImage } from 'astro:assets';
+import type { Media } from '../data/types';
+
+interface Props {
+  media: Media;
+  /** Image widths to generate, and the slot's width at each breakpoint. */
+  widths: number[];
+  sizes: string;
+}
+
+const { media, widths, sizes } = Astro.props;
+const poster =
+  media.kind === 'video' ? await getImage({ src: media.poster, width: Math.max(...widths), format: 'webp' }) : null;
+---
+
+<div class:list={['media', media.kind === 'image' && media.fit]}>
+  {
+    media.kind === 'image' ? (
+      <Image src={media.src} alt="" widths={widths} sizes={sizes} />
+    ) : (
+      <video muted loop playsinline preload="none" poster={poster?.src} data-autoplay>
+        <source src={media.src} type="video/mp4" />
+      </video>
+    )
+  }
+</div>

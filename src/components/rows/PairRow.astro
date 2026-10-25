@@ -1,0 +1,29 @@
+---
+import Media from '../Media.astro';
+import CardText from '../CardText.astro';
+import { linkAttrs } from '../../data/contact';
+import type { Row } from '../../data/types';
+import type { Lang } from '../../i18n/types';
+
+interface Props {
+  row: Extract<Row, { kind: 'pair' }>;
+  lang: Lang;
+}
+
+const { row, lang } = Astro.props;
+---
+
+<div class="row two">
+  {
+    row.projects.map((project) => (
+      <a class="card" href={project.link.href} data-project={project.id} {...linkAttrs(project.link)}>
+        <Media
+          media={project.media}
+          widths={[400, 600, 800, 1012]}
+          sizes="(max-width: 720px) calc(100vw - 40px), 506px"
+        />
+        <CardText project={project} lang={lang} />
+      </a>
+    ))
+  }
+</div>

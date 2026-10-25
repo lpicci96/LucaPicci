@@ -1,0 +1,27 @@
+---
+import { copy } from '../i18n';
+import type { Lang } from '../i18n/types';
+import { rows } from '../data/projects';
+import { rowComponents } from './rows';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+---
+
+<section>
+  <h2 class="label" id="projects">{copy[lang].sections.projects}</h2>
+  {
+    rows.map((row) => {
+      const RowComponent = rowComponents[row.kind];
+      return <RowComponent row={row} lang={lang} />;
+    })
+  }
+</section>
+
+<script>
+  import '../scripts/videos';
+  import '../scripts/story-hover';
+</script>

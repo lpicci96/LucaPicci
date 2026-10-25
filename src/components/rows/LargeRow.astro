@@ -1,0 +1,24 @@
+---
+import Media from '../Media.astro';
+import CardText from '../CardText.astro';
+import { linkAttrs } from '../../data/contact';
+import type { Row } from '../../data/types';
+import type { Lang } from '../../i18n/types';
+
+interface Props {
+  row: Extract<Row, { kind: 'large' }>;
+  lang: Lang;
+}
+
+const { row, lang } = Astro.props;
+const { project } = row;
+---
+
+<a class="card large" href={project.link.href} data-project={project.id} {...linkAttrs(project.link)}>
+  <Media
+    media={project.media}
+    widths={[480, 720, 1080, 1350]}
+    sizes="(max-width: 720px) calc(100vw - 40px), 675px"
+  />
+  <div><CardText project={project} lang={lang} /></div>
+</a>

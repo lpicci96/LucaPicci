@@ -1,0 +1,42 @@
+---
+import { Image } from 'astro:assets';
+import headshot from '../assets/headshot.jpg';
+import { copy } from '../i18n';
+import { langs, type Lang } from '../i18n/types';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = copy[lang];
+// The typed line reserves the space of the widest phrase in either language, so both pages line up.
+const ghost = langs.flatMap((l) => copy[l].intro.phrases.map((phrase) => ({ l, phrase })));
+---
+
+<section class="intro">
+  <Image
+    class="avatar"
+    src={headshot}
+    alt={t.labels.headshotAlt}
+    width={104}
+    height={104}
+    densities={[1, 2, 3]}
+    loading="eager"
+  />
+  <h1>
+    {t.intro.greeting}<span class="tagline"
+      >{t.intro.lead}{' '}<span class="typer" aria-hidden="true"
+        ><span class="ghost">{ghost.map(({ l, phrase }) => <span lang={l}>{phrase}</span>)}</span><span class="live"
+          ><span class="typed" data-phrases={JSON.stringify(t.intro.phrases)}>{t.intro.phrases[0]}</span><span
+            class="caret"></span></span
+        ></span
+      ><span class="sr">{t.intro.phrasesSpoken}</span></span
+    >
+  </h1>
+  <p>{t.intro.paragraph}</p>
+</section>
+
+<script>
+  import '../scripts/typing';
+</script>

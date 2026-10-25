@@ -1,0 +1,19 @@
+---
+import { copy } from '../i18n';
+import type { Lang } from '../i18n/types';
+import type { BuiltFor, Time } from '../data/types';
+
+interface Props {
+  builtFor: BuiltFor;
+  time: Time;
+  lang: Lang;
+}
+
+// e.g. "ONE Campaign · Lead author · 2026", or "Personal · In development" with the stage in sea blue
+const { builtFor, time, lang } = Astro.props;
+const parts = builtFor.org === 'one' ? ['ONE Campaign', builtFor.role[lang]] : [copy[lang].labels.personal];
+if (time && 'year' in time) parts.push(String(time.year));
+const stage = time && 'stage' in time ? time.stage[lang] : null;
+---
+
+<div class="meta">{parts.join(' · ')}{stage && <> · <span class="stage">{stage}</span></>}</div>

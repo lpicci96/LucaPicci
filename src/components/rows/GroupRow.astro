@@ -1,0 +1,49 @@
+---
+import { Image } from 'astro:assets';
+import Meta from '../Meta.astro';
+import { linkAttrs } from '../../data/contact';
+import type { Row } from '../../data/types';
+import type { Lang } from '../../i18n/types';
+
+interface Props {
+  row: Extract<Row, { kind: 'group' }>;
+  lang: Lang;
+}
+
+const { row, lang } = Astro.props;
+const { group } = row;
+---
+
+<div class="group">
+  <div class="tiles">
+    {
+      group.stories.map((story, i) => (
+        <a href={story.link.href} data-i={i} {...linkAttrs(story.link)}>
+          <Image
+            src={story.image}
+            alt={story.title}
+            widths={[320, 480, 662]}
+            sizes="(max-width: 720px) calc(50vw - 26px), 331px"
+          />
+        </a>
+      ))
+    }
+  </div>
+  <div>
+    <Meta builtFor={group.builtFor} time={{ year: group.year }} lang={lang} />
+    <h3>{group.title}</h3>
+    <p>{group.description[lang]}</p>
+    <div class="tools">{group.tools[lang]}</div>
+    <ol>
+      {
+        group.stories.map((story, i) => (
+          <li data-i={i}>
+            <a href={story.link.href} data-project={story.id} {...linkAttrs(story.link)}>
+              {story.title}{story.link.type === 'external' && <span class="out" aria-hidden="true">↗</span>}
+            </a>
+          </li>
+        ))
+      }
+    </ol>
+  </div>
+</div>

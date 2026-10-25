@@ -1,0 +1,12 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "website",
+  "compatibility_date": "2026-10-19",
+  // Static assets only: Astro's build output, no Worker script.
+  "assets": { "directory": "./dist" },
+  // Production lives on lucapicci.com, with no public copy on workers.dev.
+  "workers_dev": false,
+  // Previews (dev-website.lpicci96.workers.dev) sit behind Cloudflare Access.
+  "preview_urls": true,
+  "previews": {}
+}

@@ -1,0 +1,24 @@
+---
+import { Image } from 'astro:assets';
+import photo from '../assets/about-me-blur-crop.png';
+import { copy } from '../i18n';
+import type { Lang } from '../i18n/types';
+
+interface Props {
+  lang: Lang;
+}
+
+const t = copy[Astro.props.lang];
+---
+
+<section>
+  <h2 class="label about-label" id="about">{t.sections.about}</h2>
+  <div class="about">
+    <div class="photo">
+      <Image src={photo} alt={t.labels.aboutPhotoAlt} widths={[280, 330, 560, 660]} sizes="(max-width: 720px) 280px, 330px" />
+    </div>
+    <div class="text">
+      {t.about.map((paragraph) => <p>{paragraph}</p>)}
+    </div>
+  </div>
+</section>

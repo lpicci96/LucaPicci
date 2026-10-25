@@ -25,3 +25,9 @@ dist-ssr
 
 # Claude Code setup, planning docs and designs stay local
 .claude/
+
+# Astro, Wrangler and Playwright output
+.astro/
+.wrangler/
+test-results/
+playwright-report/
