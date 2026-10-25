@@ -85,6 +85,8 @@ test('hovering a story tile highlights its title and dims the other tiles', asyn
   await tile.hover();
   await expect(page.locator('.group li').nth(1)).toHaveClass(/hl/);
   await expect(page.locator('.group li').nth(0)).not.toHaveClass(/hl/);
+  await expect(page.locator('.group li a').nth(1)).toHaveCSS('color', 'rgb(10, 122, 144)');
+  await expect(page.locator('.group li a').nth(1)).toHaveCSS('text-decoration-thickness', '1px');
   for (const i of [0, 2, 3]) await expect(page.locator('.group .tiles a img').nth(i)).toHaveCSS('opacity', '0.45');
   await expect(page.locator('.group .tiles a img').nth(1)).toHaveCSS('opacity', '1');
   await page.locator('.group li a').nth(2).hover();

@@ -130,15 +130,13 @@ footer { border-top: 1px solid var(--rule); padding: 28px 0 40px; display: flex;
 @media (hover: hover) {
   .side a:hover, nav a:hover, .lang a:hover, .contact .links a:hover { color: var(--accent); }
   .side a:hover, .contact .links a:hover { transform: translateY(-2px); }
-  .card:hover h3, .card:hover .out, .group li a:hover { color: var(--accent); }
-  .card:hover h3, .group li a:hover { text-decoration: underline; text-decoration-thickness: 1px;
-                                      text-underline-offset: 4px; }
-  .group li a:hover { text-underline-offset: 3px; }
+  .card:hover h3, .card:hover .out { color: var(--accent); }
+  .card:hover h3 { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; }
+  .group li a:hover, .group li.hl a { color: var(--accent); text-decoration: underline 1px; text-underline-offset: 3px; }
   .row.two .card:hover { transform: scale(1.025); }
   .card.large:hover { transform: scale(1.012); }
   .group .tiles a:hover { transform: scale(1.04); }
   .group .tiles:hover a:not(:hover) img { opacity: .45; }
-  .group li.hl a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
   .contact .email:hover { border-color: var(--accent); }
 }
 a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
