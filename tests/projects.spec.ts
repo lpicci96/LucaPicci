@@ -96,7 +96,7 @@ test('hovering a story tile highlights its title and dims the other tiles', asyn
 
 test('demo videos play while on screen and pause when off it', { tag: '@chrome' }, async ({ page }) => {
   await page.goto('/');
-  for (const id of ['dfo', 'unesco-mcp']) {
+  for (const id of ['dfo', 'unesco-mcp', 'sovereign-debt']) {
     const video = page.locator(`[data-project="${id}"] video`);
     await video.scrollIntoViewIfNeeded();
     await expect.poll(() => video.evaluate((v: HTMLVideoElement) => !v.paused && v.currentTime > 0), { timeout: 10_000 }).toBe(true);

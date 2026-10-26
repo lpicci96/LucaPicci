@@ -4,7 +4,7 @@ export const it: Copy = {
   meta: {
     title: 'Luca Picci',
     description:
-      'Luca Picci lavora come data scientist: sviluppa strumenti di dati e AI, progetta visualizzazioni di dati e fa ricerca sullo sviluppo globale.',
+      'Luca Picci è un data scientist che crea strumenti basati su dati e IA, progetta visualizzazioni di dati e fa ricerca sullo sviluppo globale.',
     ogLocale: 'it_IT',
   },
   sections: {
@@ -21,22 +21,22 @@ export const it: Copy = {
     aboutPhotoAlt: 'Luca Picci',
   },
   intro: {
-    greeting: 'Ciao, sono Luca.',
+    greeting: 'Ciao, mi chiamo Luca.',
     lead: 'Aiuto a',
-    phrases: ['dare senso ai dati caotici.', 'chiarire temi complessi.', 'usare i dati globali per agire.'],
-    phrasesSpoken: 'dare senso ai dati caotici, chiarire temi complessi e usare i dati globali per agire.',
+    phrases: ['rendere utili i dati disordinati.', 'fare luce su temi complessi.', 'tradurre dati globali in azioni.'],
+    phrasesSpoken: 'rendere utili i dati disordinati, fare luce su temi complessi e tradurre dati globali in azioni.',
     paragraph:
-      'Sviluppo strumenti di dati e AI, progetto visualizzazioni di dati e faccio ricerca sui temi dello sviluppo globale. Attualmente lavoro come data scientist alla ONE Campaign.',
+      'Creo strumenti basati su dati e IA, progetto visualizzazioni di dati e faccio ricerca su temi di sviluppo globale. Attualmente lavoro come data scientist alla ONE Campaign.',
   },
   about: [
-    "Le mie origini sono in Sardegna, ma l'infanzia l'ho passata in Zimbabwe. Poi gli Stati Uniti, per giocare a tennis all'università, ma alla fine è stata l'economia a conquistarmi. Oggi vivo a Parigi.",
-    "Crescere in Zimbabwe nei primi anni Duemila mi ha mostrato da vicino quanto le politiche economiche pesino sulla vita delle persone comuni. Eppure trovare dati e informazioni sulle grandi questioni globali è difficilissimo, ed è questo che mi ha portato a lavorare con i dati. Il vero colpo di fulmine è stato la visualizzazione dei dati: è un superpotere, perché può rendere chiari temi complessi e dare un volto umano ai dati che li raccontano, spingendo ad agire.",
-    'In questo periodo mi dedico agli strumenti di dati e AI che sviluppo per ONE, alla ricerca sulla finanza per lo sviluppo e ai miei progetti personali.',
-    'Il tennis resta una grande passione e gioco appena posso. Lo spirito competitivo non mi manca di certo.',
+    "Sono originario della Sardegna e sono cresciuto in Zimbabwe. Mi sono trasferito negli Stati Uniti per giocare a tennis al college, ma alla fine è stata l'economia a conquistarmi. Oggi vivo a Parigi.",
+    'Crescere in Zimbabwe nei primi anni Duemila mi ha fatto toccare con mano quanto le politiche economiche incidano sulla vita delle persone comuni. Eppure trovare dati e informazioni sulle grandi questioni globali è difficilissimo, ed è questo che mi ha portato a lavorare con i dati. In particolare, mi sono innamorato della visualizzazione dei dati. È un superpotere: può fare chiarezza su temi complessi e dare un volto umano ai dati che li raccontano, spingendo le persone ad agire.',
+    'In questo periodo mi dedico agli strumenti basati su dati e IA che realizzo per ONE, alla ricerca sulla finanza per lo sviluppo e ai miei progetti personali.',
+    'Il tennis resta una mia grande passione e gioco appena posso. Sono competitivo fino al midollo.',
     'Scrivimi se ti va di collaborare a qualcosa, o anche solo per fare due chiacchiere sul mio lavoro.',
   ],
   footer: {
-    privacy: 'Questo sito usa Cloudflare Web Analytics: niente cookie, nessun tracciamento tra siti.',
+    privacy: "Questo sito usa Cloudflare Web Analytics: niente cookie e nessun tracciamento da un sito all'altro.",
   },
-  consoleNote: 'Se stai leggendo questo messaggio, sei nerd quanto me. Scrivimi!',
+  consoleNote: 'Se stai leggendo questo messaggio, sei un nerd come me. Sentiamoci!',
 };
