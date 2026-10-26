@@ -53,6 +53,18 @@ const fontFaces = `
     <link rel="preload" href={serifFont} as="font" type="font/woff2" crossorigin />
     <link rel="preload" href={sansFont} as="font" type="font/woff2" crossorigin />
     <style is:inline set:html={fontFaces}></style>
+
+    <script is:inline>
+      // Cloudflare Web Analytics. Cloudflare can't inject it into a Worker's static pages, so it's added here,
+      // on the live site only, so local runs and previews make no third-party requests.
+      if (location.hostname === 'lucapicci.com') {
+        const beacon = document.createElement('script');
+        beacon.type = 'module';
+        beacon.src = 'https://static.cloudflareinsights.com/beacon.min.js';
+        beacon.dataset.cfBeacon = JSON.stringify({ token: 'bbda17c8e9744ae7910442a8f47df20b' });
+        document.head.append(beacon);
+      }
+    </script>
   </head>
   <body>
     <slot />

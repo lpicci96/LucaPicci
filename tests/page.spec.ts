@@ -184,3 +184,13 @@ test('the sitemap lists both pages with their alternates', async ({ request }) =
   expect(xml).toContain(`hreflang="en" href="${site}/"`);
   expect(xml).toContain(`hreflang="it" href="${site}/it/"`);
 });
+
+test('loads the Web Analytics beacon on lucapicci.com only', async ({ page, baseURL }) => {
+  const beacons: string[] = [];
+  page.on('request', (r) => {
+    if (r.url().startsWith('https://static.cloudflareinsights.com/beacon.min.js')) beacons.push(r.url());
+  });
+  await page.goto('/', { waitUntil: 'networkidle' });
+  const live = new URL(baseURL!).hostname === 'lucapicci.com';
+  expect(beacons).toHaveLength(live ? 1 : 0);
+});

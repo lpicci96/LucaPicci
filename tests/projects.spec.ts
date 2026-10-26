@@ -72,7 +72,8 @@ for (const { lang, path } of pages) {
       });
       await page.goto(path);
       await scrollThrough(page);
-      await page.waitForLoadState('networkidle');
+      // wait for the images, not the network: the looping videos keep it busy on a real connection
+      await page.waitForFunction(() => [...document.images].every((img) => img.complete), null, { timeout: 30_000 });
       expect(failed).toEqual([]);
     });
   });
