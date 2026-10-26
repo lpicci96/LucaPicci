@@ -177,7 +177,7 @@ export const rows: Row[] = [
         id: 'global-fund-tracker',
         title: 'Global Fund tracker',
         link: { href: 'https://data.one.org/analysis/global-fund-8th-replenishment-tracker', type: 'external' },
-        builtFor: { org: 'one', role: { en: 'Co-author and visualisation', it: 'Coautore e visualizzazioni' } },
+        builtFor: { org: 'one', role: { en: 'Co-author and visualisation', it: 'Coautore e visualizzazione' } },
         time: { year: 2025 },
         description: {
           en: "Tracks pledges to the Global Fund's eighth replenishment as donors announce them.",
